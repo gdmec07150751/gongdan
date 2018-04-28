@@ -22,7 +22,7 @@
                   <option  <if condition="$onelist['rank'] eq 3" >selected="selected" </if> value="3">一般</option>
                   <option  <if condition="$onelist['rank'] eq 4" >selected="selected" </if> value="4">低</option>
                 </select>
-                <input type="button"  class='btn-info' id='setsr' value='提交'>
+                <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
 <input type="hidden" id="getid" value="{$gid}">
 
 
@@ -30,11 +30,11 @@
             
 
 <div>
-            <p class="font-weight"
-             <if condition="$onelist['status'] eq 1" > style='color:red;border-color:red;'
-             <elseif condition="$onelist['status']  eq 2"/>style='color:orange;border-color:orange;'
-             <elseif condition="$onelist['status']  eq 3"/>style='color:#CCCC00;border-color:#CCCC00;'
-             <elseif condition="$onelist['status']  eq 4"/>style='color:green;border-color:green;'
+            <p 
+             <if condition="$onelist['status'] eq 1" > class="label label-danger"
+             <elseif condition="$onelist['status']  eq 2"/>class="label label-warning"
+             <elseif condition="$onelist['status']  eq 3"/>class="label label-info"
+             <elseif condition="$onelist['status']  eq 4"/>class="label label-success"
            </if>
 
             ><if condition="$onelist['status'] eq 1" >未处理
@@ -42,13 +42,13 @@
              <elseif condition="$onelist['status']  eq 3"/>待回复
              <elseif condition="$onelist['status']  eq 4"/>已完成
            </if>
-         </p>
+         </p>&nbsp&nbsp&nbsp&nbsp&nbsp
 
-        <p class="qing"
-     <if condition="$onelist['rank'] eq 1" > style='color:red;border-color:red;'
-             <elseif condition="$onelist['rank']  eq 2"/>style='color:orange;border-color:orange;'
-             <elseif condition="$onelist['rank']  eq 3"/>style='color:#CCCC00;border-color:#CCCC00;'
-             <elseif condition="$onelist['rank']  eq 4"/>style='color:green;border-color:green;'
+        <p 
+     <if condition="$onelist['rank'] eq 1" > class="label label-danger"
+             <elseif condition="$onelist['rank']  eq 2"/>class="label label-warning"
+             <elseif condition="$onelist['rank']  eq 3"/>class="label label-info"
+             <elseif condition="$onelist['rank']  eq 4"/>class="label label-success"
            </if>
 
 
@@ -61,25 +61,28 @@
 
  
 
-<div class = "panel panel-default" style="margin-top: 50px">
-<div class="panel-heading">{$onelist['title']}</div>
+<div class = "panel panel-primary" style="margin-top: 50px">
+<div class="panel-heading"> <h3 class="panel-title">{$onelist['title']}</h3></div>
 <div class="panel-body">
-<p>{$onelist.content}</p>
+<p>{$onelist.content}
+</p>
 </div>
 <ul class="list-group">
-        <li class="list-group-item"> 
+        <li class="list-group-item" <if condition="$il eq 0">style="display: none;"</if>> 
         <volist name='imgarr' id='vo'>
           <img class="img-rounded" src='__ROOT__/upload/images/{$vo}' style="width: 100px;height: 100px;" onclick="imgDisplay(this)">
         </volist>
         </li>
-        <li class="list-group-item">
+        <li class="list-group-item" <if condition="$fl eq 0">style="display: none;"</if>>
            <volist name='filearr' id='vo2'>
+           <div>
           <a href='__ROOT__/upload/files/{$vo2.file_url}'  >
-          
           {$vo2.file_name}
-          
-          </a>
-          <br>
+          </a><span> <a href='__ROOT__/upload/files/{$vo2.file_url}'  >
+          下载
+          </a></span>
+          <div>
+   
         </volist>
         </li>
     </ul>
@@ -91,8 +94,17 @@
 
 
 
-        <div>
-        <h3 >工单回复</h3>
+        <div class = "panel panel-primary">
+        <div class="panel-heading">
+         <h3 class="panel-title">
+            工单回复
+        </h3>
+        </div>
+
+        <if condition='$le eq 0'><p style="text-align: center;"><strong>暂时没有回复内容</strong></p></if>
+
+           <div class="panel-body">
+
         <volist name='sa' id='vosa' >
         <div class = "panel panel-default">
 
@@ -104,14 +116,23 @@
           
    </p>
           </div>
+          <ul class="list-group">
+
+          <li class="list-group-item" <if condition="$vosa['img_url'] eq false">style="display: none;"</if>>
+      <volist name="vosa['img_url']" id='lyvo'>
+          <img class="img-rounded"  src='__ROOT__/upload/images/{$lyvo}' style="width: 100px;height: 100px;" onclick="imgDisplay(this)" >
+</volist>
+
+          </li> 
+           <li class="list-group-item" <if condition="$vosa['file_url'] eq false">style="display: none;"</if>>
+   <volist name="vosa['file_url']" id='lyvo2' key='k' >
+         <div> <a href='__ROOT__/upload/files/{$lyvo2.url}' download="{$lyvo2.name}" >{$lyvo2.name}</a></div>
+</volist>
+           </li> 
+          </ul>
 
 
-          <volist name="vosa['img_url']" id='lyvo'>
-          <img class="img-rounded"  src='__ROOT__/upload/images/{$lyvo}' style="width: 150px;height: 100px;padding-left: 20px;" onclick="imgDisplay(this)" >
-</volist>
-<volist name="vosa['file_url']" id='lyvo2' key='k' >
-         <div> <a href='__ROOT__/upload/files/{$lyvo2.url}' download="{$lyvo2.name}" style="padding-left: 20px;" >{$lyvo2.name}</a></div>
-</volist>
+ 
 
         </div>
 
@@ -123,7 +144,7 @@
 <ul class="pagination">
                            {$page}
                         </ul>
-
+</div>
         </div>
 
 
@@ -133,34 +154,27 @@
 
    <div id='quanshangchuan'>      
     <div id="upBox">
-       <div id="inputBox"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
+       <div id="inputBox" class="btn btn-primary"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
        <input type='hidden' class="imgid" id='imgid'  name="imgid" value=''>
          <div id="imgBox">
          </div>
-         <input type="button" id="btn" value="上传图片"></br>
+         <input  type="button" id="btn" value="上传图片" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
          </div>
     <div id="upfBox">
-       <div id="inputfBox"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
+       <div id="inputfBox" class="btn btn-primary"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
        <input type='hidden' class="fileid" id='fileid'  name="fileid" value=''>
       
          <div id="imgfBox">
          </div>
-         <input type="button" id="btnf" value="上传文件"></br>
+           <input type="button" id="btnf" value="上传文件" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
          </div>
 </div>
-<div id="wrapper" style="display: none;width: 100%">
-    <!--进度条容器-->
-    <div id="progressbar">
-        <!--用来模仿进度条推进效果的进度条元素-->
-        <div id="fill"></div>
-    </div>
-</div>  
-          
+
         </form>
 
       </div>
     </div>
-    <input type="button" id='btnl' class='btn-info'  value="发送">
+    <input type="button" id='btnl' class="btn btn-primary"  value="发送">
   </div>
   
 </div>

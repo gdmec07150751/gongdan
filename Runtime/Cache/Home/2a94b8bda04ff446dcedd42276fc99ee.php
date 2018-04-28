@@ -122,7 +122,7 @@ function updatepwd(id){
 </aside>
 
 <section class="content-wrapper right-side" id="riframe" style="margin:0px;padding:0px;margin-left:230px;">
-    <iframe id='rightContent' name='rightContent' src="<?php echo U('Home/Workorder/allwork');?>" width='100%' frameborder="0"></iframe>
+    <iframe id='rightContent' name='rightContent' src="<?php echo U('Home/Workorder/newwork');?>" width='100%' frameborder="0"></iframe>
 </section>
 
 	<footer class="main-footer">

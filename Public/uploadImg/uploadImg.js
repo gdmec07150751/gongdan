@@ -3,7 +3,7 @@ var imgFile = []; //文件流
 var imgName = []; //图片名字
 var fileobj = [];
 var data = new FormData();
-var pg=document.getElementById('pg');
+
 //选择图片
 var count=0;
 
@@ -14,8 +14,8 @@ function imgUpload(obj) {
 	//alert(imgBox);
 	
 	$(oInput).on("change", function() {
+
 		count=0;
-  
 		var fileImg = $(oInput)[0];
 		var fileList = fileImg.files;
     	var FORMAT = $(oInput).val().substr($(this).val().length - 3, 3);
@@ -39,7 +39,9 @@ function imgUpload(obj) {
 			fileobj.push($('#file')[0].files[i]);
 
 		}
-
+		if(imgFile.length>-1){
+     document.getElementById("btn").style.display="block";
+ }
 		addNewContent(imgBox);
 	})
 	$(btn).on('click', function() {
@@ -48,7 +50,7 @@ function imgUpload(obj) {
         	return;
     }
 
-		    data.delete('file[]');
+		    //data.delete('file[]');
 		     var size = [];
 		    for (var k = 0, length = imgFile.length; k < length; k++) {
                       size.push(imgFile[k].size);
@@ -65,19 +67,10 @@ data.append('imgname',imgname);
 
 fileobj= [];
 
-    document.getElementById("wrapper").style.display="block";
-        var fill=document.getElementById('fill');
-        
-    //通过间隔定时器实现百分比文字效果,通过计算CSS动画持续时间进行间隔设置
-        var timer=setInterval(function(e){
-            count++;
-            fill.innerHTML=count+'%';
-            if(count===100) {
-            	clearInterval(timer);
+
+ 
 submitPicture(obj.upUrl, data);
-document.getElementById("wrapper").style.display="none";
-            		}
-        },17);
+
 		//var data = new Object;
 		//data[obj.data] = imgFile;
 	  
@@ -95,16 +88,19 @@ function addNewContent(obj) {
            }
 
 		var oldBox = $(obj).html();
-		$(obj).html(oldBox + '<div class="imgContainer"><img title=' +
+		$(obj).html(oldBox + '<div class="imgContainer"><img class="img-rounded" title=' +
 		 imgName[a] + ' alt=' + imgName[a] + ' src=' + imgSrc[a] +
 		  ' onclick="imgDisplay(this)"><p onclick="removeImg(this,' + a + ')"'+
 		  ' class="imgDelete">删除</p>'+
-          '<q class="imgDelete"><strong>'+imgNametwo[a]+'</strong></q>'+
 		  '</div>');
 	}
 }
 //删除
 function removeImg(obj, index) {
+	
+	if(imgFile.length==1){
+		document.getElementById("btn").style.display="none";
+	}
 
 	imgSrc.splice(index, 1);
 	imgFile.splice(index, 1);
@@ -134,13 +130,13 @@ function submitPicture(url,data) {
 
 
 	    $(".imgid").attr("value",dat);
-            console.log($(".imgid").val());
+            //console.log($(".imgid").val());
                  imgSrc = []; 
             imgFile = []; 
             imgName = []; 
             fileobj = [];
-		    fileobj = [];
-		    data.delete('file[]');
+	document.getElementById("btn").style.display="none";
+		    //data.delete('file[]');
             return dialog.successf('上传成功');
 			},
 			error:function(XMLHttpRequest, textStatus, errorThrown){

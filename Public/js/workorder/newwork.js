@@ -1,5 +1,5 @@
  
-  var um = UM.getEditor('myEditor');
+  var um = UM.getEditor('myEditor',{initialFrameWidth: null});
 
 
    

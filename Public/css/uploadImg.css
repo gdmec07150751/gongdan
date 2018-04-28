@@ -2,31 +2,13 @@
    #quanshangchuan{
         width: 100%;
       }
-      #upBox{
-        float: right;
-        text-align: center;
-        width:500px;
-        /*padding: 20px;*/
-        border: 1px solid #666;
-/*        margin: auto;
-        margin-top: 150px;
-        margin-bottom: 200px;*/
-        position: relative;
-        border-radius: 10px;
-        /*background-color: black;*/
+      #upBox{  
+        width:100%; 
       }
 
       #inputBox{
-        width: 100%;
-        height: 40px;
-        border: 1px solid cornflowerblue;
-        color: cornflowerblue;
-        border-radius: 20px;
         position: relative;
-        text-align: center;
-        line-height: 40px;
         overflow: hidden;
-        font-size: 16px;
       }
       #inputBox input{
         width: 114%;
@@ -43,16 +25,16 @@
       }
       .imgContainer{
         display: inline-block;
-        width: 32%;
+        width: 150px;
         height: 150px;
         margin-left: 1%;
-        border: 1px solid #666666;
+  
         position: relative;
         margin-top: 30px;
         box-sizing: border-box;
       }
       .imgContainer img{
-        width: 100%;
+        width: 150px;
         height: 150px;
         cursor: pointer;
       }
@@ -74,27 +56,5 @@
       .imgContainer:hover p{
         display: block;
       }
-            .imgContainer:hover q{
-        display: block;
-      }
-      q{
-        text-align: center;
-      }
-      #btn{
-        outline: none;
-        width: 100px;
-        height: 30px;
-        background: cornflowerblue;
-        border: 1px solid cornflowerblue;
-        color: white;
-        cursor: pointer;
-        margin-top: 20px;
-        /*float: left;*/
-        border-radius: 5px;
-      }
-      .btn{
-        width: 200px;
-        height: 60px;
-        margin-top: 50px;
-        margin-left: 420px;
-      }
+ 
+  

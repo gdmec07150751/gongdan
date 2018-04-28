@@ -49,6 +49,7 @@ if($is['img_id']&&$is['img_id']!=0){
 //print_r('进来了');exit;
   $iswi = D('Workorder')->selectOnewi($id);
  $imgarr = explode('|', $iswi['img_url']);
+ $this->assign('il',count($imgarr));
  $this->assign('imgarr',$imgarr);
 }
 if($is['file_id']&&$is['file_id']!=0){
@@ -62,12 +63,12 @@ if($is['file_id']&&$is['file_id']!=0){
      $filearr[$key]['file_name'] = $filenamearr[$key];
      $filearr[$key]['file_size'] = $filesizearr[$key];
   }
+  $this->assign('fl',count($filearr));
    $this->assign('filearr',$filearr);
 }
 
 
   $this->assign('gid',$id);
- 
  $this->assign('onelist',$is);
 
 
@@ -135,6 +136,7 @@ if($sa['file_id']&&$sa['file_id']!=0){
         $show = $Page->show();
         $list=array_slice($sa,$Page->firstRow,$Page->listRows);
         //$this->assign('list',$list);// 赋值数据集
+         $this->assign('le',count($list));
 	       $this->assign('sa',$list);
          $this->assign('page',$show);// 赋值分页输出
 

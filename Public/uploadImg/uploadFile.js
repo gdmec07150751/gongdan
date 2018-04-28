@@ -35,6 +35,13 @@ function fileUpload(obj) {
  imgFile1.push(fileList1[i]);
  fileobj1.push($('#filef')[0].files[i]);
 		}
+
+
+		if(imgFile1.length>-1){
+     document.getElementById("btnf").style.display="block";
+ }
+
+
 		addNewContent1(imgfBox);
 	})
 	$(btn1).on('click', function() {
@@ -60,20 +67,7 @@ data1.append('filename',filename);
 
 		fileobj1= [];
 
-
- document.getElementById("wrapper").style.display="block";
-        var fill=document.getElementById('fill');
-        
-    //通过间隔定时器实现百分比文字效果,通过计算CSS动画持续时间进行间隔设置
-        var timer=setInterval(function(e){
-            count++;
-            fill.innerHTML=count+'%';
-            if(count===100) {
-            	clearInterval(timer);
 submitPicture1(obj.upUrl,data1);
-document.getElementById("wrapper").style.display="none";
-            		}
-        },17);
 
 
 
@@ -88,23 +82,28 @@ function addNewContent1(obj) {
 	$(imgfBox).html("");
 	var imgNametwo = imgName1;
 	for(var a = 0; a < imgSrc1.length; a++) {
-           if(imgNametwo[a].length>10){
+         /*  if(imgNametwo[a].length>10){
            	imgNametwo[a] = imgNametwo[a].substr(0,5)+'...'+imgNametwo[a].substr(-6,6);
           
            }
-
+*/
 		var oldBox1 = $(obj).html();
-		$(obj).html(oldBox1 + '<div class="imgContainer1"><img '+
+		$(obj).html( oldBox1+'<div class="imgContainer1"><a href="'+imgSrc1[a]+'">'+imgNametwo[a]+'</a>&nbsp&nbsp&nbsp<span onclick="removeImg1(this,' + a + ')" class="imgDelete">删除</span></div><br>');
+
+/*	'<div class="imgContainer1"><img '+
 			'title=' + imgNametwo[a] + '  src="../../../Public/images/txt.jpg" onclick'+
 			'="imgDisplay1(this)">'+
 			'<p onclick="removeImg1(this,' + a + ')" class="imgDelete">删除</p>'+
              '<q class="imgDelete"><strong>'+imgNametwo[a]+'</strong></q>'+
-			'</div>');
+			'</div>'*/
 	}
 }
 //删除
 function removeImg1(obj, index) {
 
+	if(imgFile1.length==1){
+		document.getElementById("btnf").style.display="none";
+	}
 	imgSrc1.splice(index, 1);
 	imgFile1.splice(index, 1);
 	imgName1.splice(index, 1);
@@ -132,12 +131,13 @@ function submitPicture1(url,data) {
 			data: data,
           success: function(dat) {
 		    $(".fileid").attr("value",dat);
-            console.log($(".fileid").val());
+            //console.log($(".fileid").val());
 		    imgSrc1 = []; 
           	imgFile1 = []; 
           	imgName1 = []; 
           	fileobj1 = [];
-          	data1.delete('file[]');
+          	//data1.delete('file[]');
+          	document.getElementById("btnf").style.display="none";
           return dialog.successf('上传成功');
       },
       error:function(dat){

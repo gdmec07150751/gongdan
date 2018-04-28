@@ -11,7 +11,6 @@
     <!-- FontAwesome 4.3.0 -->
  	<link href="/Public/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="/Public/js/baidueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-  <link href="/Public/js/uploadify/uploadify.css" rel="stylesheet" type="text/css"  /> 
 
     <!-- Ionicons 2.0.0 --
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +26,7 @@
     <link href="/Public/css/uploadImg.css" rel="stylesheet" type="text/css" /> 
 <link href="/Public/css/uploadFile.css" rel="stylesheet" type="text/css" /> 
     <!-- <link href="/Public/css/IMGUP.css" rel="stylesheet" /> -->
-    <link href="/Public/css/checkone.css" rel="stylesheet" type="text/css"/> 
+
     
     <!-- jQuery 2.1.4 -->
 
@@ -43,7 +42,7 @@
       <script src="/Public/js/baidueditor/umeditor.config.js"></script>
   <script src="/Public/js/baidueditor/umeditor.min.js"></script>
   <script type="text/javascript" src="/Public/js/baidueditor/lang/zh-cn/zh-cn.js"></script>
-  <script type="text/javascript" src="/Public/js/uploadify/jquery.uploadify.min.js"></script>  
+
 
     <script type="text/javascript">
     function delfun(obj){
@@ -146,7 +145,7 @@
                   <option  <?php if($onelist['rank'] == 3): ?>selected="selected"<?php endif; ?> value="3">一般</option>
                   <option  <?php if($onelist['rank'] == 4): ?>selected="selected"<?php endif; ?> value="4">低</option>
                 </select>
-                <input type="button"  class='btn-info' id='setsr' value='提交'>
+                <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
 <input type="hidden" id="getid" value="<?php echo ($gid); ?>">
 
 
@@ -154,23 +153,23 @@
             
 
 <div>
-            <p class="font-weight"
-             <?php if($onelist['status'] == 1): ?>style='color:red;border-color:red;'
-             <?php elseif($onelist['status'] == 2): ?>style='color:orange;border-color:orange;'
-             <?php elseif($onelist['status'] == 3): ?>style='color:#CCCC00;border-color:#CCCC00;'
-             <?php elseif($onelist['status'] == 4): ?>style='color:green;border-color:green;'<?php endif; ?>
+            <p 
+             <?php if($onelist['status'] == 1): ?>class="label label-danger"
+             <?php elseif($onelist['status'] == 2): ?>class="label label-warning"
+             <?php elseif($onelist['status'] == 3): ?>class="label label-info"
+             <?php elseif($onelist['status'] == 4): ?>class="label label-success"<?php endif; ?>
 
             ><?php if($onelist['status'] == 1): ?>未处理
              <?php elseif($onelist['status'] == 2): ?>处理中
              <?php elseif($onelist['status'] == 3): ?>待回复
              <?php elseif($onelist['status'] == 4): ?>已完成<?php endif; ?>
-         </p>
+         </p>&nbsp&nbsp&nbsp&nbsp&nbsp
 
-        <p class="qing"
-     <?php if($onelist['rank'] == 1): ?>style='color:red;border-color:red;'
-             <?php elseif($onelist['rank'] == 2): ?>style='color:orange;border-color:orange;'
-             <?php elseif($onelist['rank'] == 3): ?>style='color:#CCCC00;border-color:#CCCC00;'
-             <?php elseif($onelist['rank'] == 4): ?>style='color:green;border-color:green;'<?php endif; ?>
+        <p 
+     <?php if($onelist['rank'] == 1): ?>class="label label-danger"
+             <?php elseif($onelist['rank'] == 2): ?>class="label label-warning"
+             <?php elseif($onelist['rank'] == 3): ?>class="label label-info"
+             <?php elseif($onelist['rank'] == 4): ?>class="label label-success"<?php endif; ?>
 
 
          ><?php if($onelist['rank'] == 1): ?>紧急
@@ -181,22 +180,24 @@
 
  
 
-<div class = "panel panel-default" style="margin-top: 50px">
-<div class="panel-heading"><?php echo ($onelist['title']); ?></div>
+<div class = "panel panel-primary" style="margin-top: 50px">
+<div class="panel-heading"> <h3 class="panel-title"><?php echo ($onelist['title']); ?></h3></div>
 <div class="panel-body">
-<p><?php echo ($onelist["content"]); ?></p>
+<p><?php echo ($onelist["content"]); ?>
+</p>
 </div>
 <ul class="list-group">
-        <li class="list-group-item"> 
+        <li class="list-group-item" <?php if($il == 0): ?>style="display: none;"<?php endif; ?>> 
         <?php if(is_array($imgarr)): $i = 0; $__LIST__ = $imgarr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img class="img-rounded" src='/upload/images/<?php echo ($vo); ?>' style="width: 100px;height: 100px;" onclick="imgDisplay(this)"><?php endforeach; endif; else: echo "" ;endif; ?>
         </li>
-        <li class="list-group-item">
-           <?php if(is_array($filearr)): $i = 0; $__LIST__ = $filearr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
-          
+        <li class="list-group-item" <?php if($fl == 0): ?>style="display: none;"<?php endif; ?>>
+           <?php if(is_array($filearr)): $i = 0; $__LIST__ = $filearr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><div>
+          <a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
           <?php echo ($vo2["file_name"]); ?>
-          
-          </a>
-          <br><?php endforeach; endif; else: echo "" ;endif; ?>
+          </a><span> <a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
+          下载
+          </a></span>
+          <div><?php endforeach; endif; else: echo "" ;endif; ?>
         </li>
     </ul>
 </div>
@@ -207,8 +208,17 @@
 
 
 
-        <div>
-        <h3 class="panel-heading">工单回复</h3>
+        <div class = "panel panel-primary">
+        <div class="panel-heading">
+         <h3 class="panel-title">
+            工单回复
+        </h3>
+        </div>
+
+        <?php if($le == 0): ?><p style="text-align: center;"><strong>暂时没有回复内容</strong></p><?php endif; ?>
+
+           <div class="panel-body">
+
         <?php if(is_array($sa)): $i = 0; $__LIST__ = $sa;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vosa): $mod = ($i % 2 );++$i;?><div class = "panel panel-default">
 
 
@@ -219,10 +229,19 @@
           
    </p>
           </div>
+          <ul class="list-group">
+
+          <li class="list-group-item" <?php if($vosa['img_url'] == false): ?>style="display: none;"<?php endif; ?>>
+      <?php if(is_array($vosa['img_url'])): $i = 0; $__LIST__ = $vosa['img_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo): $mod = ($i % 2 );++$i;?><img class="img-rounded"  src='/upload/images/<?php echo ($lyvo); ?>' style="width: 100px;height: 100px;" onclick="imgDisplay(this)" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+          </li> 
+           <li class="list-group-item" <?php if($vosa['file_url'] == false): ?>style="display: none;"<?php endif; ?>>
+   <?php if(is_array($vosa['file_url'])): $k = 0; $__LIST__ = $vosa['file_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo2): $mod = ($k % 2 );++$k;?><div> <a href='/upload/files/<?php echo ($lyvo2["url"]); ?>' download="<?php echo ($lyvo2["name"]); ?>" ><?php echo ($lyvo2["name"]); ?></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+           </li> 
+          </ul>
 
 
-          <?php if(is_array($vosa['img_url'])): $i = 0; $__LIST__ = $vosa['img_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo): $mod = ($i % 2 );++$i;?><img class="img-rounded"  src='/upload/images/<?php echo ($lyvo); ?>' style="width: 150px;height: 100px;padding-left: 20px;" onclick="imgDisplay(this)" ><?php endforeach; endif; else: echo "" ;endif; ?>
-<?php if(is_array($vosa['file_url'])): $k = 0; $__LIST__ = $vosa['file_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo2): $mod = ($k % 2 );++$k;?><div> <a href='/upload/files/<?php echo ($lyvo2["url"]); ?>' download="<?php echo ($lyvo2["name"]); ?>" style="padding-left: 20px;" ><?php echo ($lyvo2["name"]); ?></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+ 
 
         </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -232,7 +251,7 @@
 <ul class="pagination">
                            <?php echo ($page); ?>
                         </ul>
-
+</div>
         </div>
 
 
@@ -242,34 +261,27 @@
 
    <div id='quanshangchuan'>      
     <div id="upBox">
-       <div id="inputBox"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
+       <div id="inputBox" class="btn btn-primary"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
        <input type='hidden' class="imgid" id='imgid'  name="imgid" value=''>
          <div id="imgBox">
          </div>
-         <input type="button" id="btn" value="上传图片"></br>
+         <input  type="button" id="btn" value="上传图片" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
          </div>
     <div id="upfBox">
-       <div id="inputfBox"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
+       <div id="inputfBox" class="btn btn-primary"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
        <input type='hidden' class="fileid" id='fileid'  name="fileid" value=''>
       
          <div id="imgfBox">
          </div>
-         <input type="button" id="btnf" value="上传文件"></br>
+           <input type="button" id="btnf" value="上传文件" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
          </div>
 </div>
-<div id="wrapper" style="display: none;width: 100%">
-    <!--进度条容器-->
-    <div id="progressbar">
-        <!--用来模仿进度条推进效果的进度条元素-->
-        <div id="fill"></div>
-    </div>
-</div>  
-          
+
         </form>
 
       </div>
     </div>
-    <input type="button" id='btnl' class='btn-info'  value="发送">
+    <input type="button" id='btnl' class="btn btn-primary"  value="发送">
   </div>
   
 </div>

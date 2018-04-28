@@ -29,7 +29,7 @@ $('.singcms-table #checkone').click(function(){
 });
 
 //删除
-      $('#btn').click(function(){
+      $('#mybtn').click(function(){
 
         var darr=[];
         var cb = document.getElementsByName('dcheckbox');
@@ -46,7 +46,7 @@ $('.singcms-table #checkone').click(function(){
         }
 //dialog.confirm('确认要删除选中的'+darr.length+'个工单?',url);
 layer.confirm('您确定要删除选中的'+darr.length+'个工单？', {
-btn: ['确定','取消'] //按钮
+mybtn: ['确定','取消'] //按钮
 },function(){
         var data = new FormData();
         data.append('idarr',darr);

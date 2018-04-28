@@ -11,7 +11,8 @@
     <!-- FontAwesome 4.3.0 -->
  	<link href="/Public/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="/Public/js/baidueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-  <link href="/Public/js/uploadify/uploadify.css" rel="stylesheet" type="text/css"  />  
+  <link href="/Public/js/uploadify/uploadify.css" rel="stylesheet" type="text/css"  /> 
+
     <!-- Ionicons 2.0.0 --
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
@@ -26,7 +27,7 @@
     <link href="/Public/css/uploadImg.css" rel="stylesheet" type="text/css" /> 
 <link href="/Public/css/uploadFile.css" rel="stylesheet" type="text/css" /> 
     <!-- <link href="/Public/css/IMGUP.css" rel="stylesheet" /> -->
-    
+    <link href="/Public/css/checkone.css" rel="stylesheet" type="text/css"/> 
     
     <!-- jQuery 2.1.4 -->
 
@@ -77,7 +78,42 @@
     }   
     </script>        
   </head>
+  <style>
+ #wrapper{
+    position: relative;
+    width:200px;
+    height:100px;
+    border:1px solid darkgray;
+    float: right;
+}
+#progressbar{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-90px;
+    margin-top:-10px;
+    width:180px;
+    height:20px;
+    border:1px solid darkgray;
 
+}
+/*在进度条元素上调用动画*/
+#fill{
+    animation: move 2s;
+    text-align: center;
+    background-color: #6caf00;
+}
+/*实现元素宽度的过渡动画效果*/
+@keyframes move {
+    0%{
+        width:0;
+
+    }
+    100%{
+        width:100%;
+    }
+}
+  </style>
   <body style="background-color:#ecf0f5;">
  
 

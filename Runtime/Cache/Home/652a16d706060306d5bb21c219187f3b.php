@@ -11,7 +11,6 @@
     <!-- FontAwesome 4.3.0 -->
  	<link href="/Public/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="/Public/js/baidueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-  <link href="/Public/js/uploadify/uploadify.css" rel="stylesheet" type="text/css"  /> 
 
     <!-- Ionicons 2.0.0 --
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +26,7 @@
     <link href="/Public/css/uploadImg.css" rel="stylesheet" type="text/css" /> 
 <link href="/Public/css/uploadFile.css" rel="stylesheet" type="text/css" /> 
     <!-- <link href="/Public/css/IMGUP.css" rel="stylesheet" /> -->
-    <link href="/Public/css/checkone.css" rel="stylesheet" type="text/css"/> 
+
     
     <!-- jQuery 2.1.4 -->
 
@@ -43,7 +42,7 @@
       <script src="/Public/js/baidueditor/umeditor.config.js"></script>
   <script src="/Public/js/baidueditor/umeditor.min.js"></script>
   <script type="text/javascript" src="/Public/js/baidueditor/lang/zh-cn/zh-cn.js"></script>
-  <script type="text/javascript" src="/Public/js/uploadify/jquery.uploadify.min.js"></script>  
+
 
     <script type="text/javascript">
     function delfun(obj){
@@ -134,16 +133,16 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12">
-          <input id='btn' type='button' value="删除选中工单">
-          <select id='checkstatus'>
+          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单">
+          <select id='checkstatus'  class="form-control" style="width:200px;"> 
           <option value="0" >所有工单</option>
           <option <?php if($_GET[status]==1) echo("selected");?> value="1" >未处理</option>
             <option <?php if($_GET[status]==2) echo("selected");?> value="2" >在处理</option>
             <option <?php if($_GET[status]==3) echo("selected");?> value="3" >待回复</option>
             <option <?php if($_GET[status]==4) echo("selected");?> value="4" >已完成</option>
           </select>
-          <input id='btn1' type='button' value="查询">
-            <table id="list-table" class="table table-bordered table-striped dataTable singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
+          <input id='btn1' type='button' class="btn btn-primary" value="查询">
+            <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
              <thead>
                <tr role="row" align="center">
                  <td width="3%"><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
@@ -158,26 +157,27 @@
               <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
                   <td><input type="checkbox" value='<?php echo ($vo["id"]); ?>' name = 'dcheckbox'></td>
                   
-                  <td  <?php if($vo['status'] == 1): ?>style="background-color: red;"
-                   <?php elseif($vo['status'] == 2): ?> style="background-color: orange;"
-                   <?php elseif($vo['status'] == 3): ?> style="background-color: #CCCC00;"
-                   <?php elseif($vo['status'] == 4): ?> style="background-color: green;"<?php endif; ?>>
-                 <?php if($vo['status'] == 1): ?>未处理
+                  <td>
+                <div <?php if($vo['status'] == 1): ?>class="label label-danger"
+                   <?php elseif($vo['status'] == 2): ?> class="label label-warning"
+                   <?php elseif($vo['status'] == 3): ?> class="label label-info"
+                   <?php elseif($vo['status'] == 4): ?> class="label label-success"<?php endif; ?>> <?php if($vo['status'] == 1): ?>未处理
                    <?php elseif($vo['status'] == 2): ?>处理中
                    <?php elseif($vo['status'] == 3): ?>待回复
                    <?php elseif($vo['status'] == 4): ?>已完成<?php endif; ?>
+                 </div>
                </td>
                <td><?php echo ($vo["title"]); ?></td>
                <td>
-                 <?php if($vo['rank'] == 1): ?><p style="color: red;">紧急</p>
-                   <?php elseif($vo['rank'] == 2): ?><p style="color: orange;">高</p>
-                   <?php elseif($vo['rank'] == 3): ?><p style="color: #CCCC00;">一般</p>
-                   <?php else: ?><p style="color: green;">低</p><?php endif; ?>
+                 <?php if($vo['rank'] == 1): ?><p class="label label-danger">紧急</p>
+                   <?php elseif($vo['rank'] == 2): ?><p class="label label-warning">高</p>
+                   <?php elseif($vo['rank'] == 3): ?><p class="label label-info">一般</p>
+                   <?php else: ?><p class="label label-success">低</p><?php endif; ?>
                </td>
                
                <td>
                <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
-               <input type='button'  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">
+               <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">
 
                </td>
              </tr><?php endforeach; endif; ?>
