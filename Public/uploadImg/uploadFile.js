@@ -94,7 +94,6 @@ function addNewContent1(obj) {
 			'title=' + imgNametwo[a] + '  src="../../../Public/images/txt.jpg" onclick'+
 			'="imgDisplay1(this)">'+
 			'<p onclick="removeImg1(this,' + a + ')" class="imgDelete">删除</p>'+
-             '<q class="imgDelete"><strong>'+imgNametwo[a]+'</strong></q>'+
 			'</div>'*/
 	}
 }

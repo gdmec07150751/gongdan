@@ -15,12 +15,14 @@ class WorkorderController extends BaseController {
                 echo  $this->error('内容不能为空');
             }
           //print_r($_POST['fileid']);exit;
+            $uid = session(C('USER_AUTH_KEY'));
             $data = array(
                 'title' => $_POST['title'],
                 'rank' => $_POST['rank'],
                 'content' => $_POST['content'],
                 'file_id' => $_POST['fileid'],
                 'img_id' => $_POST['imgid'],
+                'user_id' =>$uid,
             );
             $is =D('Workorder')->Insert($data);
         }
@@ -45,9 +47,9 @@ $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
         $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 3;
 
-        $menus = D('Workorder')->getalls($_GET['status'],$page,$pagesize);
+        $menus = D('Workorder')->getalls('status',$_GET['status'],$page,$pagesize);
 
-        $menucount = D('Workorder')->getallCounts($_GET['status']);
+        $menucount = D('Workorder')->getallCount('status',$_GET['status']);
 
        $res = new \Think\Page($menucount,$pagesize);
 
@@ -65,7 +67,7 @@ $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
         $menus = D('Workorder')->getall($page,$pagesize);
 
-        $menucount = D('Workorder')->getallCount();
+        $menucount = D('Workorder')->getallCount(0,0);
 
        $res = new \Think\Page($menucount,$pagesize);
 

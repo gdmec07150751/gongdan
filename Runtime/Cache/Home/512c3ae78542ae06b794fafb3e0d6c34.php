@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>    <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -116,66 +116,77 @@
   <body style="background-color:#ecf0f5;">
  
 
-<div class="wrapper">
-    <div class="breadcrumbs" id="breadcrumbs">
+    <div class="wrapper">
+        <div class="breadcrumbs" id="breadcrumbs">
 	<ol class="breadcrumb">
 	<?php if(is_array($nav_list)): foreach($nav_list as $k=>$v): if($k == '首页'): ?><li><a href="<?php echo ($v); ?>"><i class="fa fa-home"></i>&nbsp;&nbsp;<?php echo ($k); ?></a></li>
 	    <?php else: ?>    
 	        <li><a href="<?php echo ($v); ?>"><?php echo ($k); ?></a></li><?php endif; endforeach; endif; ?>          
 	</ol>
 </div>
-  <section class="content">
-       <div class="row">
-          <div class="col-xs-12">
-            <div class="box">
-              <div class="box-header">  
-              <div class="form-group pull-right">
-                      <a href="<?php echo U('Manager/userhandle');?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>新增用户</a>
-                    </div>            
-               </div>     
-               <!-- /.box-header -->
-               <div class="box-body">              
+    	<section class="content">
                 <div class="row">
-                <div class="col-sm-12">
-                  <table id="list-table" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info" style="text-align: center;">
-                     <thead>
-                       <tr role="row" align="center">
-            
-                         <td width="6%"><b>用户名</b></td>
-                         <td><b>所属角色</b></td>
-                      
-                         <td width="14%"><b>加入时间</b></td>
-                         <td width="9%"><b>操作</b></td>
-                       </tr>
-                     </thead>
-            <tbody>
-              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
-                  
-                         <td><?php echo ($vo["name"]); ?></td>
-                         <td><?php echo ($vo["role_name"]); ?></td>
-                       
-                         <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
-                         <td>
-                         <a class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
-                          <a class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
-                             
-                </td>
-                        </tr><?php endforeach; endif; ?>
-                       </tbody>
-                     <tfoot>
-                     
-                     </tfoot>
-                   </table>
-                 </div>
-            </div>
-            </div><!-- /.box-body -->
-          </div><!-- /.box -->
-        </div>
-       </div>
-   </section>
-</div>
-<script>
+                    <div class="col-sm-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title"></h3>
+                            </div>
 
-</script>
-</body>
-</html>
+                            <!-- /.box-header -->
+                            <form action="<?php echo U('Manager/userhandle');?>" method="post" class="form-horizontal" id="taskform">
+                            <div class="box-body">                         
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">用户名</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" style="width:200px" name="name" value="<?php echo ($info["name"]); ?>">
+                                        </div>
+                                        <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">登录名</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" style="width:200px" name="emp_no" value="<?php echo ($info["emp_no"]); ?>">
+                                        </div>
+                                        <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">登录密码</label>
+                                        <div class="col-sm-4">
+                                            <input type="password" class="form-control" style="width:200px" name="password" value="<?php echo ($info["password"]); ?>">
+                                        </div>
+                                        <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">所属角色</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="small form-control"  style="width:200px" name="role_id" id="role_id">
+                                                <option value="">请选择</option>
+                                                <?php if(is_array($role)): foreach($role as $key=>$vo): ?><option value="<?php echo ($vo["role_id"]); ?>" <?php if($vo['role_id'] == $info['role_id']): ?>selected<?php endif; ?>><?php echo ($vo["role_name"]); ?></option><?php endforeach; endif; ?>        
+    										</select>
+                                        </div>
+                                    </div>                               
+
+                            </div>
+                            <div class="box-footer">
+                            	<input type="hidden" name="act" value="<?php echo ($act); ?>">
+                                <input type="hidden" name="uid" value="<?php echo ($_GET['user_id']); ?>">
+                            	<button type="reset" class="btn btn-primary"><i class="icon-ok"></i>重填  </button>                       	                 
+                                <button type="submit" class="btn btn-primary pull-right"><i class="icon-ok"></i>提交</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div> 
+    <script type="text/javascript">
+    laydate.render({
+      elem: '#expecttime'
+      ,theme: '#393D49'
+      ,type: 'datetime'
+    });
+
+    </script> 
+    </body>
+    </html>

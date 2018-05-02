@@ -1,0 +1,77 @@
+<include file="Static/min-header"/>
+<div class="wrapper">
+  <include file="Static/breadcrumb"/>
+  <section class="content">
+   <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+
+       <!-- /.box-header -->
+       <div class="box-body">              
+        <div class="row">
+          <div class="col-sm-12">
+          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单">
+
+
+            <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
+             <thead>
+               <tr role="row" align="center">
+                 <td width="3%"><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
+                 <td width="3%"><b>状态</b></td>
+                 <td width="8%"><b>标题</b></td>
+                 <td width="8%"><b>级别</b></td>
+                 <td width="15%"><b>操作</b></td>
+
+               </tr>
+             </thead>
+             <tbody>
+              <foreach name="list" item="vo" key="k" >
+                <tr role="row">
+                  <td><input type="checkbox" value='{$vo.id}' name = 'dcheckbox'></td>
+                  
+                  <td>
+                <div <if condition="$vo['status'] eq 1"> class="label label-danger"
+                   <elseif condition="$vo['status']  eq 2"/> class="label label-warning"
+                   <elseif condition="$vo['status']  eq 3"/> class="label label-info"
+                   <elseif condition="$vo['status']  eq 4"/> class="label label-success"
+                 </if>> <if condition="$vo['status'] eq 1">未处理
+                   <elseif condition="$vo['status']  eq 2"/>处理中
+                   <elseif condition="$vo['status']  eq 3"/>待回复
+                   <elseif condition="$vo['status']  eq 4"/>已完成
+                 </if>
+                 </div>
+               </td>
+               <td>{$vo.title}</td>
+               <td>
+                 <if condition="$vo['rank'] eq 1" > <p class="label label-danger">紧急</p>
+                   <elseif condition="$vo['rank']  eq 2"/><p class="label label-warning">高</p>
+                   <elseif condition="$vo['rank']  eq 3"/><p class="label label-info">一般</p>
+                   <else /><p class="label label-success">低</p>
+                 </if>
+               </td>
+               
+               <td>
+               <input type="hidden" name="wid"  value="{$vo.id}">
+               <input type='button'  class="btn btn-primary"  attr-id='{$vo.id}' id='checkone' name='check'  value="查询">
+
+               </td>
+             </tr>
+     
+           </foreach>
+ 
+           </tbody>
+
+           </table>
+           <ul class="pagination">{$pageRes}</ul>
+         </section>
+
+       </div>
+
+     </body>
+     <script type="text/javascript">
+      var SCOPE = {
+
+      };
+    </script>
+   
+    </html>

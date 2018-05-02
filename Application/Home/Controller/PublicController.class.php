@@ -28,6 +28,7 @@ class PublicController extends BaseController {
 					session('user_name', $admin_info['name']);
 					session('user_pic', $admin_info['pic']);
 					session('dept_id', $admin_info['dept_id']);
+                    session('role_id', $admin_info['role_id']);
                     $User = M('User');
 					$data = array();
 					$data['id'] = $admin_info['id'];

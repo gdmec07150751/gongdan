@@ -133,6 +133,7 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12"> 
+          <div >
      <select id='status' name="status" class="form-control" style="width:200px;">
                   <option <?php if($onelist['status'] == 1): ?>selected="selected"<?php endif; ?> value="1">将工单转至未处理</option>
                   <option <?php if($onelist['status'] == 2): ?>selected="selected"<?php endif; ?>   value="2">将工单转至正在处理</option>
@@ -148,7 +149,7 @@
                 <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
 <input type="hidden" id="getid" value="<?php echo ($gid); ?>">
 
-
+      </div>
 
             
 
@@ -192,10 +193,17 @@
         </li>
         <li class="list-group-item" <?php if($fl == 0): ?>style="display: none;"<?php endif; ?>>
            <?php if(is_array($filearr)): $i = 0; $__LIST__ = $filearr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><div>
-          <a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
+          <span>
           <?php echo ($vo2["file_name"]); ?>
-          </a><span> <a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
+          </span>
+          &nbsp&nbsp&nbsp&nbsp
+          <span> <a href='/upload/files/<?php echo ($vo2["file_url"]); ?>'  >
           下载
+          </a></span>
+            
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+          <span> <a class="pdf" href='/upload/files/<?php echo ($vo2["file_pdf"]); ?>'  display:none>
+          预览
           </a></span>
           <div><?php endforeach; endif; else: echo "" ;endif; ?>
         </li>
@@ -236,7 +244,11 @@
 
           </li> 
            <li class="list-group-item" <?php if($vosa['file_url'] == false): ?>style="display: none;"<?php endif; ?>>
-   <?php if(is_array($vosa['file_url'])): $k = 0; $__LIST__ = $vosa['file_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo2): $mod = ($k % 2 );++$k;?><div> <a href='/upload/files/<?php echo ($lyvo2["url"]); ?>' download="<?php echo ($lyvo2["name"]); ?>" ><?php echo ($lyvo2["name"]); ?></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+   <?php if(is_array($vosa['file_url'])): $k = 0; $__LIST__ = $vosa['file_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo2): $mod = ($k % 2 );++$k;?><div> 
+         <span><?php echo ($lyvo2["name"]); ?></span>
+         <span  ><a href='/upload/files/<?php echo ($lyvo2["url"]); ?>'>下载</a></span>
+         <span  ><a href='/upload/files/<?php echo ($lyvo2["pdf"]); ?>'>预览</a></span>
+         </div><?php endforeach; endif; else: echo "" ;endif; ?>
            </li> 
           </ul>
 

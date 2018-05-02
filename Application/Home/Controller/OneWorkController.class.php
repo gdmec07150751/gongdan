@@ -6,7 +6,8 @@ class OneWorkController extends BaseController {
     }
 
 public function checkcontent(){
-
+$roleid = session('role_id');
+$this->assign('roleid',$roleid);
 //改变状态
 if($_POST['status']){
 	$status = $_POST['status'];
@@ -58,10 +59,12 @@ if($is['file_id']&&$is['file_id']!=0){
   $fileurlarr = explode('|', $iswf['file_url']);
   $filenamearr = explode('|', $iswf['file_name']);
   $filesizearr = explode('|', $iswf['file_size']);
+  $filepdfarr = explode('|', $iswf['file_pdf']);
   foreach ($fileurlarr as $key => $value) {
      $filearr[$key]['file_url'] = $fileurlarr[$key];
      $filearr[$key]['file_name'] = $filenamearr[$key];
      $filearr[$key]['file_size'] = $filesizearr[$key];
+     $filearr[$key]['file_pdf'] = $filepdfarr[$key];
   }
   $this->assign('fl',count($filearr));
    $this->assign('filearr',$filearr);
@@ -101,6 +104,7 @@ for($i=0;$i<count($sa);$i++){
  $sa[$i]['file_url'] = explode('|', $sa[$i]['file_url']);
  $sa[$i]['file_name'] = explode('|', $sa[$i]['file_name']);
  $sa[$i]['file_size'] = explode('|', $sa[$i]['file_size']);
+ $sa[$i]['file_pdf'] = explode('|', $sa[$i]['file_pdf']);
 }else{
   $sa[$i]['file_url']  = array();
  /* $sa[$i]['file_url']  = array();
@@ -109,7 +113,7 @@ for($i=0;$i<count($sa);$i++){
   foreach ($sa[$i]['file_url'] as $key => $value) {
      $saa[$i][$key]['url'] = $sa[$i]['file_url'][$key];
       $saa[$i][$key]['name'] = $sa[$i]['file_name'][$key];
-     //$filearr[$key]['file_size'] = $filesizearr[$key];
+    $saa[$i][$key]['pdf'] = $sa[$i]['file_pdf'][$key];;
   }
   $sa[$i]['file_url'] = $saa[$i];
 //print_r($saa[$i]);
@@ -121,10 +125,12 @@ if($sa['file_id']&&$sa['file_id']!=0){
   $lyfileurlarr = explode('|', $sawf['file_url']);
   $lyfilenamearr = explode('|', $sawf['file_name']);
   $lyfilesizearr = explode('|', $sawf['file_size']);
+  $lyfilepdfarr = explode('|', $sawf['file_pdf']);
   foreach ($fileurlarr as $key => $value) {
      $lyfilearr[$key]['file_url'] = $lyfileurlarr[$key];
      $lyfilearr[$key]['file_name'] = $lyfilenamearr[$key];
      $lyfilearr[$key]['file_size'] = $lyfilesizearr[$key];
+     $lyfilearr[$key]['file_pdf'] = $lyfilepdfarr[$key];
   }
   
 }

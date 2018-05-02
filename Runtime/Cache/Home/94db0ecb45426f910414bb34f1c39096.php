@@ -117,7 +117,7 @@
  
 
 <div class="wrapper">
-    <div class="breadcrumbs" id="breadcrumbs">
+  <div class="breadcrumbs" id="breadcrumbs">
 	<ol class="breadcrumb">
 	<?php if(is_array($nav_list)): foreach($nav_list as $k=>$v): if($k == '首页'): ?><li><a href="<?php echo ($v); ?>"><i class="fa fa-home"></i>&nbsp;&nbsp;<?php echo ($k); ?></a></li>
 	    <?php else: ?>    
@@ -125,57 +125,70 @@
 	</ol>
 </div>
   <section class="content">
-       <div class="row">
-          <div class="col-xs-12">
-            <div class="box">
-              <div class="box-header">  
-              <div class="form-group pull-right">
-                      <a href="<?php echo U('Manager/userhandle');?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>新增用户</a>
-                    </div>            
-               </div>     
-               <!-- /.box-header -->
-               <div class="box-body">              
-                <div class="row">
-                <div class="col-sm-12">
-                  <table id="list-table" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info" style="text-align: center;">
-                     <thead>
-                       <tr role="row" align="center">
-            
-                         <td width="6%"><b>用户名</b></td>
-                         <td><b>所属角色</b></td>
-                      
-                         <td width="14%"><b>加入时间</b></td>
-                         <td width="9%"><b>操作</b></td>
-                       </tr>
-                     </thead>
-            <tbody>
-              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
-                  
-                         <td><?php echo ($vo["name"]); ?></td>
-                         <td><?php echo ($vo["role_name"]); ?></td>
-                       
-                         <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
-                         <td>
-                         <a class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
-                          <a class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
-                             
-                </td>
-                        </tr><?php endforeach; endif; ?>
-                       </tbody>
-                     <tfoot>
-                     
-                     </tfoot>
-                   </table>
-                 </div>
-            </div>
-            </div><!-- /.box-body -->
-          </div><!-- /.box -->
-        </div>
-       </div>
-   </section>
-</div>
-<script>
+   <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
 
-</script>
-</body>
-</html>
+       <!-- /.box-header -->
+       <div class="box-body">              
+        <div class="row">
+          <div class="col-sm-12">
+          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单">
+
+
+            <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
+             <thead>
+               <tr role="row" align="center">
+                 <td width="3%"><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
+                 <td width="3%"><b>状态</b></td>
+                 <td width="8%"><b>标题</b></td>
+                 <td width="8%"><b>级别</b></td>
+                 <td width="15%"><b>操作</b></td>
+
+               </tr>
+             </thead>
+             <tbody>
+              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
+                  <td><input type="checkbox" value='<?php echo ($vo["id"]); ?>' name = 'dcheckbox'></td>
+                  
+                  <td>
+                <div <?php if($vo['status'] == 1): ?>class="label label-danger"
+                   <?php elseif($vo['status'] == 2): ?> class="label label-warning"
+                   <?php elseif($vo['status'] == 3): ?> class="label label-info"
+                   <?php elseif($vo['status'] == 4): ?> class="label label-success"<?php endif; ?>> <?php if($vo['status'] == 1): ?>未处理
+                   <?php elseif($vo['status'] == 2): ?>处理中
+                   <?php elseif($vo['status'] == 3): ?>待回复
+                   <?php elseif($vo['status'] == 4): ?>已完成<?php endif; ?>
+                 </div>
+               </td>
+               <td><?php echo ($vo["title"]); ?></td>
+               <td>
+                 <?php if($vo['rank'] == 1): ?><p class="label label-danger">紧急</p>
+                   <?php elseif($vo['rank'] == 2): ?><p class="label label-warning">高</p>
+                   <?php elseif($vo['rank'] == 3): ?><p class="label label-info">一般</p>
+                   <?php else: ?><p class="label label-success">低</p><?php endif; ?>
+               </td>
+               
+               <td>
+               <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
+               <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">
+
+               </td>
+             </tr><?php endforeach; endif; ?>
+ 
+           </tbody>
+
+           </table>
+           <ul class="pagination"><?php echo ($pageRes); ?></ul>
+         </section>
+
+       </div>
+
+     </body>
+     <script type="text/javascript">
+      var SCOPE = {
+
+      };
+    </script>
+   
+    </html>

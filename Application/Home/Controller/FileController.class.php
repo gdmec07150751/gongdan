@@ -13,6 +13,8 @@ class FileController extends Controller
 {
     public function ajaxuploadfile(){
         if(!empty($_FILES)){
+                Vendor('pdfu.Pdfa');
+                $pdf =  new \pdf();
             import("@.Think.UploadFile");
             $upload = new \Think\Upload();
             $upload->rootPath  = 'upload/files/';//根路径
@@ -29,19 +31,27 @@ class FileController extends Controller
                 for($i=0;$i<count($info);$i++){
 
                     $arr[] = $info[$i]['savepath'].$info[$i]['savename'];
-                  
+
+$input_url1 = dirname(dirname(dirname(dirname(__FILE__)))).'/upload/files/'.$info[$i]['savepath'].$info[$i]['savename'];
+$output_url1 = dirname(dirname(dirname(dirname(__FILE__)))).'/upload/files/'.$info[$i]['savepath'].$info[$i]['savename'].'.pdf';
+$pdf->run($input_url1,$output_url1);
+    
+    $ourl = $info[$i]['savepath'].$info[$i]['savename'].'.pdf';
+    
+                    $pdfarr[] = $ourl;
 
                 }
             }
 
 
             $arr1 = implode("|", $arr);
-            
+            $pdfarr1 = implode("|", $pdfarr);
             
                      $filedata = array(
                     'file_url'  =>$arr1,
                     'file_name' =>$_POST['filename'],
                     'file_size' =>$_POST['filesize'],
+                    'file_pdf' => $pdfarr1
                 );
               $is = D('File')->Insertall($filedata);
                //var_dump($is);exit;

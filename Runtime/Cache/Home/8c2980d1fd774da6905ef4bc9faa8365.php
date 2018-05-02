@@ -116,6 +116,20 @@
   <body style="background-color:#ecf0f5;">
  
 
+<style>
+ul.group-list {
+    width: 96%;min-width: 1000px; margin: auto 5px;list-style: disc outside none;
+}
+ul.group-list li {
+    white-space: nowrap;float: left;
+    width: 150px; height: 25px;
+    padding: 3px 5px;list-style-type: none;
+    list-style-position: outside;border: 0px;margin: 0px;
+}
+th.title {
+    background: #F3F3F3;border-bottom: 1px solid #D7D7D7;font-weight: bold; white-space: nowrap;
+}
+</style>
 <div class="wrapper">
     <div class="breadcrumbs" id="breadcrumbs">
 	<ol class="breadcrumb">
@@ -124,58 +138,81 @@
 	        <li><a href="<?php echo ($v); ?>"><?php echo ($k); ?></a></li><?php endif; endforeach; endif; ?>          
 	</ol>
 </div>
-  <section class="content">
-       <div class="row">
-          <div class="col-xs-12">
-            <div class="box">
-              <div class="box-header">  
-              <div class="form-group pull-right">
-                      <a href="<?php echo U('Manager/userhandle');?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>新增用户</a>
-                    </div>            
-               </div>     
-               <!-- /.box-header -->
-               <div class="box-body">              
-                <div class="row">
-                <div class="col-sm-12">
-                  <table id="list-table" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info" style="text-align: center;">
-                     <thead>
-                       <tr role="row" align="center">
-            
-                         <td width="6%"><b>用户名</b></td>
-                         <td><b>所属角色</b></td>
-                      
-                         <td width="14%"><b>加入时间</b></td>
-                         <td width="9%"><b>操作</b></td>
-                       </tr>
-                     </thead>
-            <tbody>
-              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
-                  
-                         <td><?php echo ($vo["name"]); ?></td>
-                         <td><?php echo ($vo["role_name"]); ?></td>
-                       
-                         <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
-                         <td>
-                         <a class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
-                          <a class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
-                             
-                </td>
-                        </tr><?php endforeach; endif; ?>
-                       </tbody>
-                     <tfoot>
-                     
-                     </tfoot>
-                   </table>
-                 </div>
-            </div>
-            </div><!-- /.box-body -->
-          </div><!-- /.box -->
-        </div>
-       </div>
-   </section>
-</div>
-<script>
+	<section class="content">
+	<div class="container-fluid">
 
+		  <div class="panel panel-default">
+          
+            <div class="panel-body ">	        	
+			<form action="<?php echo U('Home/Manager/rolesave');?>" id="roleform" method="post">
+			<input type="hidden" name="role_id" value="<?php echo ($detail["role_id"]); ?>" />
+			<table class="table table-bordered table-striped">
+				<tr>
+					<th>角色名称:</th>
+					<td><div class="col-xs-6"><input type="text" class="form-control" name="data[role_name]" id="role_name" value="<?php echo ($detail["role_name"]); ?>"></div></td>
+					<th >角色描述:</th>
+					<td><textarea rows="2" cols="50" name="data[role_desc]"><?php echo ($detail["role_desc"]); ?></textarea></td>
+				</tr>
+			</table>
+	        <h4><b>权限分配：</b><input type="checkbox" onclick="choosebox(this)">全选</h4>
+			<table class="table table-bordered table-striped dataTable">
+				<tbody>
+				<?php if(is_array($modules)): foreach($modules as $kk=>$menu): ?><tr>
+							<td class="title left" style="padding-right:50px;">
+								<b><?php echo ($group[$kk]); ?>：</b>
+								<label class="right"><input type="checkbox" value="1" cka="mod-<?php echo ($kk); ?>">全选</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="group-list">
+								<?php if(is_array($menu)): foreach($menu as $key=>$vv): ?><li><label><input type="checkbox" name="right[]" value="<?php echo ($vv["id"]); ?>" <?php if($vv["enable"] == 1): ?>checked<?php endif; ?> ck="mod-<?php echo ($kk); ?>"><?php echo ($vv["name"]); ?></label></li><?php endforeach; endif; ?>
+								<div class="clear-both"></div>
+								</ul>
+							</td>
+						</tr><?php endforeach; endif; ?>
+				</tbody>
+				<tfoot>
+                  <tr align="center">
+                    <td><input class="btn btn-default" type="reset" value="重置">&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input class="btn btn-info" type="button" onclick="roleSubmit()" value="提交">
+                    </td>
+                  </tr>
+               </tfoot>
+			</table>
+			</form>
+		   </div>
+		</div>
+	</div></section>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(":checkbox[cka]").click(function(){
+		var $cks = $(":checkbox[ck='"+$(this).attr("cka")+"']");
+		if($(this).is(':checked')){
+			$cks.each(function(){$(this).prop("checked",true);});
+		}else{
+			$cks.each(function(){$(this).removeAttr('checked');});
+		}
+	});
+});
+
+function choosebox(o){
+	var vt = $(o).is(':checked');
+	if(vt){
+		$('input[type=checkbox]').prop('checked',vt);
+	}else{
+		$('input[type=checkbox]').removeAttr('checked');
+	}
+}
+
+function roleSubmit(){
+	if($('#role_name').val() == '' ){
+		layer.alert('角色名称不能为空', {icon: 2});
+		return false;
+	}
+	$('#roleform').submit();
+}
 </script>
 </body>
 </html>
