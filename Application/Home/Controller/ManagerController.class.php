@@ -3,7 +3,13 @@ namespace Home\Controller;
 use Think\Controller;
 class ManagerController extends BaseController {
     public function user(){
-    	$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.id>1");
+        $thisid = session('role_id');
+        if($thisid == 6){
+    	$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.role_id=6");
+    }else{
+$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.role_id=2");
+
+    }
     	$this->assign('list',$list);
     	$this->display();
     }
@@ -63,7 +69,7 @@ class ManagerController extends BaseController {
             }
             $modules[$val['group']][] = $val;
         }
-        $group = array('work'=>'工作','mail'=>'邮件','info'=>'消息','form'=>'报表','manager'=>'管理');
+        $group = array('work'=>'工作','mail'=>'邮件','info'=>'消息','form'=>'报表','manager'=>'管理','workorder'=>'工单管理');
         $this->assign('group',$group);
         $this->assign('modules',$modules);
         $this->display();

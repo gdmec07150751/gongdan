@@ -77,42 +77,6 @@
     }   
     </script>        
   </head>
-  <style>
- #wrapper{
-    position: relative;
-    width:200px;
-    height:100px;
-    border:1px solid darkgray;
-    float: right;
-}
-#progressbar{
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-left:-90px;
-    margin-top:-10px;
-    width:180px;
-    height:20px;
-    border:1px solid darkgray;
-
-}
-/*在进度条元素上调用动画*/
-#fill{
-    animation: move 2s;
-    text-align: center;
-    background-color: #6caf00;
-}
-/*实现元素宽度的过渡动画效果*/
-@keyframes move {
-    0%{
-        width:0;
-
-    }
-    100%{
-        width:100%;
-    }
-}
-  </style>
   <body style="background-color:#ecf0f5;">
  
 
@@ -133,7 +97,11 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12">
-          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单">
+<?php if(empty($list) == true): ?><div style="text-align: center;"><strong>暂时没有工单</strong></div>
+           <?php else: ?>
+
+
+          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单" <?php if($rid == 6): ?>style='display: none;'<?php endif; ?>>
           <select id='checkstatus'  class="form-control" style="width:200px;"> 
           <option value="0" >所有工单</option>
           <option <?php if($_GET[status]==1) echo("selected");?> value="1" >未处理</option>
@@ -142,10 +110,12 @@
             <option <?php if($_GET[status]==4) echo("selected");?> value="4" >已完成</option>
           </select>
           <input id='btn1' type='button' class="btn btn-primary" value="查询">
+
+
             <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
              <thead>
                <tr role="row" align="center">
-                 <td width="3%"><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
+                 <td width="3%" <?php if($rid == 6): ?>style='display: none;'<?php endif; ?>><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
                  <td width="3%"><b>状态</b></td>
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
@@ -155,7 +125,7 @@
              </thead>
              <tbody>
               <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
-                  <td><input type="checkbox" value='<?php echo ($vo["id"]); ?>' name = 'dcheckbox'></td>
+                  <td <?php if($rid == 6): ?>style='display: none;'<?php endif; ?>><input type="checkbox" value='<?php echo ($vo["id"]); ?>' name = 'dcheckbox' ></td>
                   
                   <td>
                 <div <?php if($vo['status'] == 1): ?>class="label label-danger"
@@ -184,7 +154,7 @@
  
            </tbody>
 
-           </table>
+           </table><?php endif; ?>
            <ul class="pagination"><?php echo ($pageRes); ?></ul>
          </section>
 
@@ -198,6 +168,7 @@
         'save_url' : '/index.php/Home/Workorder/allwork',
         'edit_url' : '/index.php/Home?c=OneWork&a=checkcontent',
         'edit2_url' : '/index.php/Home?c=Workorder&a=allwork',
+        'jump_url' : '/index.php/Home/Workorder/allwork',
       };
     </script>
    

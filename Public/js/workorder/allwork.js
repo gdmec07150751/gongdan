@@ -51,6 +51,7 @@ mybtn: ['确定','取消'] //按钮
         var data = new FormData();
         data.append('idarr',darr);
         var url = SCOPE.save_url;
+        var jumpurl = SCOPE.jump_url
         $.ajax({
           type: "POST",
           cache: false,
@@ -61,7 +62,7 @@ mybtn: ['确定','取消'] //按钮
           data: data,
           success: function(dat) {
   
-            return dialog.success('删除成功',url);
+            return dialog.success('删除成功',jumpurl);
 
           },
           error:function(dat){
@@ -77,12 +78,13 @@ $('#btn1').click(function(){
   //alert('???');
   var statu = document.getElementById('checkstatus');
   var status = statu.value;
+  //alert(status);
 if(status==0){
   var url = SCOPE.save_url;
 }else{
 var url = SCOPE.edit2_url+"&status="+status;
 }
-
+//alert(url);
   window.location.href  = url;
   
         });

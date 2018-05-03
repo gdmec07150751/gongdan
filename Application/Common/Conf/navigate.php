@@ -8,6 +8,14 @@
                    'allwork'=>'所有工单',
                     )
                 ),
+                       'home/mywork'=>array(
+                  'name'=>'工单管理',
+                  'action'=>array(
+                   'waittingreply'=>'带回复工单',
+                   'myworkorder'=>'我发布的工单',
+                   'handleworkorder'=>'我处理的工单',
+                    )
+                ),
            	'home/work'=>array(
                 'name' =>'工作',
                 'action'=>array(

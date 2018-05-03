@@ -10,13 +10,14 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12">
-          <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单">
-
-
+       
+<if condition='empty($list) eq true'><div style="text-align: center;"><strong>暂时没有工单</strong></div>
+           <else />
+              <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单" <if condition="$rid eq 6"> style='display: none;'</if>>
             <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
              <thead>
                <tr role="row" align="center">
-                 <td width="3%"><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
+                 <td width="3%" <if condition="$rid eq 6"> style='display: none;'</if>><b>全选</b><input id='allselect' type="checkbox"  onclick="checkAll()"></td>
                  <td width="3%"><b>状态</b></td>
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
@@ -24,10 +25,13 @@
 
                </tr>
              </thead>
+
+
              <tbody>
+             
               <foreach name="list" item="vo" key="k" >
                 <tr role="row">
-                  <td><input type="checkbox" value='{$vo.id}' name = 'dcheckbox'></td>
+                  <td <if condition="$rid eq 6"> style='display: none;'</if>><input type="checkbox" value='{$vo.id}' name = 'dcheckbox'></td>
                   
                   <td>
                 <div <if condition="$vo['status'] eq 1"> class="label label-danger"
@@ -56,21 +60,25 @@
 
                </td>
              </tr>
-     
+
            </foreach>
  
            </tbody>
 
            </table>
+           </if>
            <ul class="pagination">{$pageRes}</ul>
          </section>
 
        </div>
 
      </body>
+          <script src='__PUBLIC__/js/workorder/allwork.js' type="text/javascript"></script>
      <script type="text/javascript">
       var SCOPE = {
-
+        'save_url' : '__ROOT__/index.php/Home/Workorder/allwork',
+        'edit_url' : '__ROOT__/index.php/Home?c=OneWork&a=checkcontent',
+        'jump_url' : '__ROOT__/index.php/Home/Mywork/waittingreply',
       };
     </script>
    

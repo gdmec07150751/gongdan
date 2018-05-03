@@ -60,9 +60,9 @@ function nav_list(){
 	$navigate = include APP_PATH.'Common/Conf/navigate.php';    
 	$location = strtolower('Home/'.CONTROLLER_NAME);
 	$arr = array(
-		'首页'=>'javascript:void();',
-		$navigate[$location]['name']=>'javascript:void();',
-		$navigate[$location]['action'][ACTION_NAME]=>'javascript:void();',
+		'首页'=> 'javascript:void(0);',
+		$navigate[$location]['name']=>'javascript:void(0);',
+		$navigate[$location]['action'][ACTION_NAME]=>'javascript:void(0);',
 		);
 	return $arr;
 }

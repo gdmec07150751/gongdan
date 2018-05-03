@@ -102,6 +102,7 @@ function removeImg1(obj, index) {
 
 	if(imgFile1.length==1){
 		document.getElementById("btnf").style.display="none";
+		document.getElementById("filef").value=null;
 	}
 	imgSrc1.splice(index, 1);
 	imgFile1.splice(index, 1);

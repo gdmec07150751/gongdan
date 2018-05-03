@@ -34,16 +34,23 @@
                                         <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2">所属角色</label>
+                                        <!-- <label class="control-label col-sm-2">所属角色</label> -->
 
-                                        <div class="col-sm-8">
+                                       <if condition="$vo['role_id'] eq 6">
+                                       <input type='hidden' value="6" tyle="width:200px" name="role_id" id="role_id">
+                                       <else />
+                                       <input type='hidden' value="2" tyle="width:200px" name="role_id" id="role_id">
+                                    </if>
+
+
+                       <!--                  <div class="col-sm-8">
                                             <select class="small form-control"  style="width:200px" name="role_id" id="role_id">
                                                 <option value="">请选择</option>
                                                 <foreach name="role" item="vo">
                               <option value="{$vo.role_id}" <if condition="$vo['role_id'] eq $info['role_id']">selected</if>>{$vo.role_name}</option>
                                                 </foreach>        
     										</select>
-                                        </div>
+                                        </div> -->
                                     </div>                               
 
                             </div>

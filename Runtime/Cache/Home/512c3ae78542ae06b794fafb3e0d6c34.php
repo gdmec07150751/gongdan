@@ -77,42 +77,6 @@
     }   
     </script>        
   </head>
-  <style>
- #wrapper{
-    position: relative;
-    width:200px;
-    height:100px;
-    border:1px solid darkgray;
-    float: right;
-}
-#progressbar{
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-left:-90px;
-    margin-top:-10px;
-    width:180px;
-    height:20px;
-    border:1px solid darkgray;
-
-}
-/*在进度条元素上调用动画*/
-#fill{
-    animation: move 2s;
-    text-align: center;
-    background-color: #6caf00;
-}
-/*实现元素宽度的过渡动画效果*/
-@keyframes move {
-    0%{
-        width:0;
-
-    }
-    100%{
-        width:100%;
-    }
-}
-  </style>
   <body style="background-color:#ecf0f5;">
  
 
@@ -157,14 +121,19 @@
                                         <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2">所属角色</label>
+                                        <!-- <label class="control-label col-sm-2">所属角色</label> -->
 
-                                        <div class="col-sm-8">
+                                       <?php if($vo['role_id'] == 6): ?><input type='hidden' value="6" tyle="width:200px" name="role_id" id="role_id">
+                                       <?php else: ?>
+                                       <input type='hidden' value="2" tyle="width:200px" name="role_id" id="role_id"><?php endif; ?>
+
+
+                       <!--                  <div class="col-sm-8">
                                             <select class="small form-control"  style="width:200px" name="role_id" id="role_id">
                                                 <option value="">请选择</option>
                                                 <?php if(is_array($role)): foreach($role as $key=>$vo): ?><option value="<?php echo ($vo["role_id"]); ?>" <?php if($vo['role_id'] == $info['role_id']): ?>selected<?php endif; ?>><?php echo ($vo["role_name"]); ?></option><?php endforeach; endif; ?>        
     										</select>
-                                        </div>
+                                        </div> -->
                                     </div>                               
 
                             </div>

@@ -1,0 +1,36 @@
+[ 2018-05-02T14:08:41+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Admin
+
+[ 2018-05-02T16:15:27+08:00 ] 127.0.0.1 /index.php/[object%20HTMLInputElement]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:[object HTMLInputElement]
+
+[ 2018-05-02T16:16:41+08:00 ] 127.0.0.1 /index.php/[object%20HTMLInputElement]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:[object HTMLInputElement]
+
+[ 2018-05-02T16:16:47+08:00 ] 127.0.0.1 /index.php/[object%20HTMLInputElement]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:[object HTMLInputElement]
+
+[ 2018-05-02T16:16:50+08:00 ] 127.0.0.1 /index.php/[object%20HTMLInputElement]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:[object HTMLInputElement]
+
+[ 2018-05-02T16:17:32+08:00 ] 127.0.0.1 /index.php/[object%20HTMLInputElement]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:[object HTMLInputElement]
+

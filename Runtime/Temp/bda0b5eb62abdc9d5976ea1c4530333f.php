@@ -1,0 +1,3 @@
+<?php
+//000000000000a:17:{i:0;s:22:"WorkController@worklog";i:1;s:23:"WorkController@worklist";i:2;s:19:"WorkController@task";i:3;s:21:"WorkController@status";i:4;s:23:"MailController@maillist";i:5;s:24:"MailController@sendemail";i:6;s:24:"MailController@draftmail";i:7;s:24:"MailController@trashmail";i:8;s:24:"MailController@draftmail";i:9;s:21:"MailController@config";i:10;s:20:"InfoController@index";i:11;s:20:"FormController@index";i:12;s:27:"WorkorderController@newwork";i:13;s:27:"WorkorderController@allwork";i:14;s:30:"MyworkController@waittingreply";i:15;s:28:"MyworkController@myworkorder";i:16;s:32:"MyworkController@handleworkorder";}
+?>

@@ -77,42 +77,6 @@
     }   
     </script>        
   </head>
-  <style>
- #wrapper{
-    position: relative;
-    width:200px;
-    height:100px;
-    border:1px solid darkgray;
-    float: right;
-}
-#progressbar{
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-left:-90px;
-    margin-top:-10px;
-    width:180px;
-    height:20px;
-    border:1px solid darkgray;
-
-}
-/*在进度条元素上调用动画*/
-#fill{
-    animation: move 2s;
-    text-align: center;
-    background-color: #6caf00;
-}
-/*实现元素宽度的过渡动画效果*/
-@keyframes move {
-    0%{
-        width:0;
-
-    }
-    100%{
-        width:100%;
-    }
-}
-  </style>
   <body style="background-color:#ecf0f5;">
  
 
@@ -157,7 +121,7 @@
                          <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
                          <td>
                          <a class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
-                          <a class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
+                          <a style="display: none;" class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
                              
                 </td>
                         </tr><?php endforeach; endif; ?>

@@ -2,14 +2,17 @@
 namespace Home\Controller;
 use Think\Controller;
 class OneWorkController extends BaseController {
-    public function index(){
-    }
+ 
 
 public function checkcontent(){
+  $solve_uid = session(C('USER_AUTH_KEY'));
 $roleid = session('role_id');
-$this->assign('roleid',$roleid);
+$this->assign('rid',$roleid);
+$this->assign('sid',$solve_uid);
 //改变状态
 if($_POST['status']){
+
+     if($_POST['rank']){
 	$status = $_POST['status'];
   $rank = $_POST['rank'];
 	$id = $_POST['id'];
@@ -18,6 +21,29 @@ if($_POST['status']){
       'rank' => $rank
 		);
 	 $is =D('Workorder')->updatelevel($id,$data);
+}else{
+  $sid = $_POST['sid'];
+  //print_r($sid);exit;
+$status = $_POST['status'];
+    $id = $_POST['id'];
+  $data = array(
+      'status' => $status,
+      'solve_uid' => $solve_uid,
+    );
+  $data1 = array(
+      'status' => $status,
+      'solve_uid' => 0,
+    );
+  if($sid ==0){
+    $is =D('Workorder')->updatelevel($id,$data);
+  }else{
+    $is =D('Workorder')->updatelevel($id,$data1);
+  }
+   
+   //$this->assign('sid',$solve_uid);
+}
+
+
 }
 
 
@@ -26,9 +52,7 @@ if($_POST['status']){
 if($_POST['content']){
 $authid = session('user_name');
 $odate=date("Y-m-d H:i:s"); 
-//print_r($authid);exit;
-//print_r($_POST['imgid']);exit;
-//print_r();
+
 	      $data = array(
                 'user' => $authid,
                 'content' => $_POST['content'],
@@ -45,9 +69,9 @@ if($_GET){
  $id = $_GET['id'];
 
  $is =D('Workorder')->selectOne($id);
- //print_r($is['img_id']);exit;
+ $iswu =D('Workorder')->selectOnewu($id);
+ $this->assign('iswu',$iswu);
 if($is['img_id']&&$is['img_id']!=0){
-//print_r('进来了');exit;
   $iswi = D('Workorder')->selectOnewi($id);
  $imgarr = explode('|', $iswi['img_url']);
  $this->assign('il',count($imgarr));
@@ -72,8 +96,9 @@ if($is['file_id']&&$is['file_id']!=0){
 
 
   $this->assign('gid',$id);
+  //$this->assign('sid',$solve_uid);
  $this->assign('onelist',$is);
-
+//print_r($is);exit;
 
 
 }
@@ -136,7 +161,7 @@ if($sa['file_id']&&$sa['file_id']!=0){
 }
 
         //列表数组分页 
-        $sa = array_reverse($sa);     
+        //$sa = array_reverse($sa);     
         $count=count($sa);
         $Page=new \Think\Page($count,4);
         $show = $Page->show();

@@ -77,42 +77,6 @@
     }   
     </script>        
   </head>
-  <style>
- #wrapper{
-    position: relative;
-    width:200px;
-    height:100px;
-    border:1px solid darkgray;
-    float: right;
-}
-#progressbar{
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-left:-90px;
-    margin-top:-10px;
-    width:180px;
-    height:20px;
-    border:1px solid darkgray;
-
-}
-/*在进度条元素上调用动画*/
-#fill{
-    animation: move 2s;
-    text-align: center;
-    background-color: #6caf00;
-}
-/*实现元素宽度的过渡动画效果*/
-@keyframes move {
-    0%{
-        width:0;
-
-    }
-    100%{
-        width:100%;
-    }
-}
-  </style>
   <body style="background-color:#ecf0f5;">
  
 
@@ -133,13 +97,19 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12"> 
-          <div >
+         
+<input type="hidden" id='sid' value="<?php echo ($onelist['solve_uid']); ?>">
+<input type="button" id='solvework' class='btn btn-info' value="我要处理此工单" <?php if(($rid == 6) OR ($onelist['solve_uid'] != 0)): ?>style='display: none;'<?php endif; ?>>
+
+<input type="button" id='csw' class='btn btn-danger'  value="取消处理此工单" <?php if(($rid == 6) OR ($onelist['solve_uid'] != $sid)): ?>style='display: none;'<?php endif; ?> >
+          <div id='dealwork'  <?php if(($rid == 6) OR ($onelist['solve_uid'] != $sid)): ?>style='display: none;'<?php endif; ?> >
      <select id='status' name="status" class="form-control" style="width:200px;">
                   <option <?php if($onelist['status'] == 1): ?>selected="selected"<?php endif; ?> value="1">将工单转至未处理</option>
                   <option <?php if($onelist['status'] == 2): ?>selected="selected"<?php endif; ?>   value="2">将工单转至正在处理</option>
                   <option  <?php if($onelist['status'] == 3): ?>selected="selected"<?php endif; ?> value="3">将工单转至等待回复</option>
                   <option  <?php if($onelist['status'] == 4): ?>selected="selected"<?php endif; ?>  value="4">将工单转至已处理</option>
                 </select>
+                
      <select id='rank' name="rank" class="form-control" style="width:200px;">
                   <option <?php if($onelist['rank'] == 1): ?>selected="selected"<?php endif; ?>   value="1">紧急</option>
                   <option <?php if($onelist['rank'] == 2): ?>selected="selected"<?php endif; ?> value="2">高</option>
@@ -148,13 +118,12 @@
                 </select>
                 <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
 <input type="hidden" id="getid" value="<?php echo ($gid); ?>">
-
       </div>
 
             
 
 <div>
-            <p 
+            <strong>状态:</strong><p 
              <?php if($onelist['status'] == 1): ?>class="label label-danger"
              <?php elseif($onelist['status'] == 2): ?>class="label label-warning"
              <?php elseif($onelist['status'] == 3): ?>class="label label-info"
@@ -166,7 +135,7 @@
              <?php elseif($onelist['status'] == 4): ?>已完成<?php endif; ?>
          </p>&nbsp&nbsp&nbsp&nbsp&nbsp
 
-        <p 
+        <strong>优先级:</strong><p 
      <?php if($onelist['rank'] == 1): ?>class="label label-danger"
              <?php elseif($onelist['rank'] == 2): ?>class="label label-warning"
              <?php elseif($onelist['rank'] == 3): ?>class="label label-info"
@@ -178,6 +147,11 @@
            <?php elseif($onelist['rank'] == 3): ?>一般
            <?php else: ?>低<?php endif; ?></p>
 </div>
+
+<div><strong>发布人:<?php echo ($iswu['name']); ?></strong></div>
+<div><strong>处理人:<?php if($onelist['solve_uid'] == 0): ?>暂无<?php endif; echo ($onelist['name']); ?></strong></div>
+
+
 
  
 
@@ -202,7 +176,7 @@
           </a></span>
             
         &nbsp&nbsp&nbsp&nbsp&nbsp
-          <span> <a class="pdf" href='/upload/files/<?php echo ($vo2["file_pdf"]); ?>'  display:none>
+          <span> <a class="pdf" href='/upload/files/<?php echo ($vo2["file_pdf"]); ?>'   target="_blank">
           预览
           </a></span>
           <div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -247,7 +221,7 @@
    <?php if(is_array($vosa['file_url'])): $k = 0; $__LIST__ = $vosa['file_url'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lyvo2): $mod = ($k % 2 );++$k;?><div> 
          <span><?php echo ($lyvo2["name"]); ?></span>
          <span  ><a href='/upload/files/<?php echo ($lyvo2["url"]); ?>'>下载</a></span>
-         <span  ><a href='/upload/files/<?php echo ($lyvo2["pdf"]); ?>'>预览</a></span>
+         <span  ><a href='/upload/files/<?php echo ($lyvo2["pdf"]); ?>' target="_blank">预览</a></span>
          </div><?php endforeach; endif; else: echo "" ;endif; ?>
            </li> 
           </ul>
@@ -312,119 +286,12 @@
 
 <script src='/Public/uploadImg/uploadImg.js' type="text/javascript"></script>
 <script src='/Public/uploadImg/uploadFile.js' type="text/javascript"></script>
+<script src='/Public/js/onework/onework.js' type="text/javascript"></script>
   <script type="text/javascript">
       var SCOPE = {
         'save_url' : '/index.php/Home?c=OneWork&a=checkcontent',
         'edit_url' : '/index.php/Home?c=OneWork&a=checkcontent',
       };
     </script>
-<script type="text/javascript">
-  var um = UM.getEditor('myEditor');
 
-
-     imgUpload({
-        inputId:'file', //input框id
-        imgBox:'imgBox', //图片容器id
-        buttonId:'btn', //提交按钮id
-        upUrl:'/index.php/home/img/ajaxuploadimg',  //提交地址
-        data:'file1' //参数名
-      });
-
-   fileUpload({
-        inputId:'filef', //input框id
-        imgfBox:'imgfBox', //图片容器id
-        buttonId:'btnf', //提交按钮id
-        upUrl:'/index.php/home/file/ajaxuploadfile',  //提交地址
-        data:'file1f' //参数名
-      });
-
-
-$('#btnl').click(function(){
-  var gid = document.getElementById('getid').value;
-  var imgid = document.getElementById('imgid').value;
-  var fileid = document.getElementById('fileid').value;
-  var liuyancontent =  um.getContent();
-  if(!liuyancontent){
-    dialog.error('内容不能为空');
-    return;
-  }
-  var data =new FormData();
-  data.append('content',liuyancontent);
-  data.append('id',gid);
-  data.append('imgid',imgid);
-  data.append('fileid',fileid);
-  var url = SCOPE.save_url;
-  var jumpurl = SCOPE.edit_url+'&id='+gid;
-  $.ajax({
-      type: "POST",
-      cache: false,
-      processData: false,
-      contentType: false,
-      async: false,
-      url:url,
-      data: data,
-          success: function(dat) {
-          
-          return dialog.success('留言成功',jumpurl);
-      },
-      error:function(dat){
-   return dialog.error('上传失败，系统内部错误');
-      }
-  });
-});
-
-
-
-
-$('#setsr').click(function(){
-  var gid = document.getElementById('getid').value;
-
-    var status = document.getElementById('status');
-var index=status.selectedIndex ;         
- var reallevel = status.options[index].value;
-
-    var rank = document.getElementById('rank');
-var index1=rank.selectedIndex ;         
- var realrank= rank.options[index1].value;
-
-
- var data =new FormData();
- data.append('status',reallevel);
- data.append('rank',realrank);
- data.append('id',gid);
- url = SCOPE.save_url;
- var jumpurl = SCOPE.edit_url+'&id='+gid;
-  $.ajax({
-      type: "POST",
-      cache: false,
-      processData: false,
-      contentType: false,
-      async: false,
-      url:url,
-      data: data,
-          success: function(dat) {
-            console.log(dat);
- return dialog.success('设置成功',jumpurl);
-      },
-      error:function(dat){
-   return dialog.error('设置失败，系统内部错误');
-      }
-  });
-});
-
-
-
-
-//图片灯箱
-function imgDisplay(obj) {
-  var src = $(obj).attr("src");
-  var imgHtml = '<div style="width: 100%;height: 100vh;overflow: auto;background: rgba(0,0,0,0.5);text-align: center;position: fixed;top: 0;left: 0;z-index: 1000;"><img src=' + src + ' style="margin-top: 100px;width: 70%;margin-bottom: 100px;"/><p style="font-size: 50px;position: fixed;top: 30px;right: 30px;color: white;cursor: pointer;" onclick="closePicture(this)">×</p></div>'
-  $('body').append(imgHtml);
-}
-//关闭
-function closePicture(obj) {
-  $(obj).parent("div").remove();
-}
-
-</script>
 </html>

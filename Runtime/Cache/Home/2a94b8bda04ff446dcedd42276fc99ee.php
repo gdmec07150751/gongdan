@@ -35,7 +35,7 @@
 <div class="wrapper">
   <header class="main-header">
       <!-- Logo -->
-      <a href="/index.php/Admin/Index/index" class="logo">
+      <a href="/index.php/Home/Index/index" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b></b></span>
         <!-- logo for regular state and mobile devices -->

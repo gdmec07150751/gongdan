@@ -3,34 +3,30 @@ var imgFile = []; //文件流
 var imgName = []; //图片名字
 var fileobj = [];
 var data = new FormData();
-
 //选择图片
-var count=0;
-
 function imgUpload(obj) {
 	var oInput = '#' + obj.inputId;
 	var imgBox = '#' + obj.imgBox;
-	var btn = '#' + obj.buttonId;
-	//alert(imgBox);
-	
+	var btn = '#' + obj.buttonId;	
+	//选择一张图片后
 	$(oInput).on("change", function() {
-
-		count=0;
 		var fileImg = $(oInput)[0];
 		var fileList = fileImg.files;
+		//验证图片格式
     	var FORMAT = $(oInput).val().substr($(this).val().length - 3, 3);
-		  //console.log(FORMAT);
 	if (FORMAT != "jpg" && FORMAT != "gif" && FORMAT != "png"&& FORMAT != "peg"&& FORMAT != "bmp") {
-        	//'jpg', 'gif', 'png', 'jpeg', 'bmp'
         	dialog.error("文件格式不正确！！！支持'jpg', 'gif', 'png', 'jpeg', 'bmp'格式");
         	return;
         }
+
+        //验证图片是否空
        var fileww = this.files[0];//获取file文件对象
         if (fileww.size == 0) {
             dialog.error("不能上传空文件");
             return;
         }
-
+       
+       //将图片加在一起
 		for(var i = 0; i < fileList.length; i++) {
 			var imgSrcI = getObjectURL(fileList[i]);
 			imgName.push(fileList[i].name);
@@ -39,41 +35,40 @@ function imgUpload(obj) {
 			fileobj.push($('#file')[0].files[i]);
 
 		}
+		//上传按钮是否显示
 		if(imgFile.length>-1){
      document.getElementById("btn").style.display="block";
  }
+        //展示图片
 		addNewContent(imgBox);
 	})
+
+	//判断是否没有选择图片
 	$(btn).on('click', function() {
 		  if(fileobj.length == 0){
     	dialog.error("请选择图片");
         	return;
     }
 
-		    //data.delete('file[]');
+		    //数据处理 大小 名字 等
 		     var size = [];
 		    for (var k = 0, length = imgFile.length; k < length; k++) {
                       size.push(imgFile[k].size);
             }
-
 		    var imgsize = size.join('|');
 		    var imgname = imgName.join('|');
 
-data.append('imgsize',imgsize);
-data.append('imgname',imgname);
+         data.append('imgsize',imgsize);
+         data.append('imgname',imgname);
 		for (var i=0; i<fileobj.length;i++) {
 			data.append('file[]',fileobj[i]);
 		}
 
-fileobj= [];
 
-
- 
+          fileobj= [];
 submitPicture(obj.upUrl, data);
 
-		//var data = new Object;
-		//data[obj.data] = imgFile;
-	  
+
 
 	})
 }
@@ -82,11 +77,10 @@ function addNewContent(obj) {
 	$(imgBox).html("");
 	var imgNametwo = imgName;
 	for(var a = 0; a < imgSrc.length; a++) {
-		           if(imgNametwo[a].length>10){
+	/*	           if(imgNametwo[a].length>10){
            	imgNametwo[a] = imgNametwo[a].substr(0,5)+'...'+imgNametwo[a].substr(-6,6);
           
-           }
-
+           }*/
 		var oldBox = $(obj).html();
 		$(obj).html(oldBox + '<div class="imgContainer"><img class="img-rounded" title=' +
 		 imgName[a] + ' alt=' + imgName[a] + ' src=' + imgSrc[a] +
@@ -97,9 +91,10 @@ function addNewContent(obj) {
 }
 //删除
 function removeImg(obj, index) {
-	
+	//上传按钮是否显示
 	if(imgFile.length==1){
 		document.getElementById("btn").style.display="none";
+		document.getElementById("file").value=null;
 	}
 
 	imgSrc.splice(index, 1);
@@ -139,10 +134,8 @@ function submitPicture(url,data) {
 		    //data.delete('file[]');
             return dialog.successf('上传成功');
 			},
-			error:function(XMLHttpRequest, textStatus, errorThrown){
-				console.log(XMLHttpRequest.status);
-                console.log(XMLHttpRequest.readyState);
-                console.log(textStatus);
+			error:function(dat){
+	             return dialog.error('系统内部错误');
 			}
 		});
 	}

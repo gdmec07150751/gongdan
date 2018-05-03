@@ -11,7 +11,6 @@
     <!-- FontAwesome 4.3.0 -->
  	<link href="/Public/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="/Public/js/baidueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-  <link href="/Public/js/uploadify/uploadify.css" rel="stylesheet" type="text/css"  /> 
 
     <!-- Ionicons 2.0.0 --
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +26,7 @@
     <link href="/Public/css/uploadImg.css" rel="stylesheet" type="text/css" /> 
 <link href="/Public/css/uploadFile.css" rel="stylesheet" type="text/css" /> 
     <!-- <link href="/Public/css/IMGUP.css" rel="stylesheet" /> -->
-    <link href="/Public/css/checkone.css" rel="stylesheet" type="text/css"/> 
+
     
     <!-- jQuery 2.1.4 -->
 
@@ -43,7 +42,7 @@
       <script src="/Public/js/baidueditor/umeditor.config.js"></script>
   <script src="/Public/js/baidueditor/umeditor.min.js"></script>
   <script type="text/javascript" src="/Public/js/baidueditor/lang/zh-cn/zh-cn.js"></script>
-  <script type="text/javascript" src="/Public/js/uploadify/jquery.uploadify.min.js"></script>  
+
 
     <script type="text/javascript">
     function delfun(obj){
@@ -78,7 +77,6 @@
     }   
     </script>        
   </head>
-
   <body style="background-color:#ecf0f5;">
  
 
