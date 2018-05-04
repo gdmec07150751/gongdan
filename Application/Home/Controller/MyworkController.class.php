@@ -75,11 +75,11 @@ if($_GET['status']){
 
         $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
 
-if($_GET['status']){
+if($_GET){
 
-        $menus = D('Workorder')->getmys('solve_uid',$user_id,'status',$_GET['status'],$page,$pagesize);
+        $menus = D('Workorder')->getmys($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
 
-        $menucount = D('Workorder')->getmyCount('solve_uid',$user_id,'status',$_GET['status']);
+        $menucount = D('Workorder')->getmyCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
 
 
 

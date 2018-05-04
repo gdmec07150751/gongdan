@@ -13703,3 +13703,1683 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
 
+[ 2018-05-04T16:57:15+08:00 ] 127.0.0.1 /index.php/Home/Mywork/waittingreply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 11 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-04T16:57:15+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T16:57:17+08:00 ] 127.0.0.1 /index.php/Home/Mywork/handleworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 74 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=8 and leibie=1 and del=1 ) ORDER BY id desc LIMIT 70,10   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\WorkorderModel::getallCount(), called in D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php on line 89 and defined D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 94 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 103 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=8 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 125 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: rid D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 104 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:57:18+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:07+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 64 行.
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 65 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:08+08:00 ] 127.0.0.1 /index.php/Home/Workorder/newwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0130s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T16:58:09+08:00 ] 127.0.0.1 /index.php/Home/Mywork/handleworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:10+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T16:58:12+08:00 ] 127.0.0.1 /index.php/Home/Mywork/handleworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:20+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 64 行.
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 65 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:20+08:00 ] 127.0.0.1 /index.php/Home/Workorder/newwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0110s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T16:58:22+08:00 ] 127.0.0.1 /index.php/Home/Mywork/waittingreply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 11 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:22+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0100s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:58:23+08:00 ] 127.0.0.1 /index.php/Home/Mywork/handleworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 74 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=8 and leibie=1 and del=1 ) ORDER BY id desc LIMIT 70,10   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\WorkorderModel::getallCount(), called in D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php on line 89 and defined D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 94 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 103 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=8 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 125 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: rid D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 104 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:07+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:09+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:11+08:00 ] 127.0.0.1 /index.php/Home?c=OneWork&a=checkcontent&id=181
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: home/onework D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 64 行.
+NOTIC: [8] Undefined index: home/onework D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 13 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.solve_uid = oa_user.id  WHERE ( oa_workorder.id=181 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.user_id = oa_user.id  WHERE ( oa_workorder.id=181 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `oa_workorder` INNER JOIN oa_file ON oa_workorder.file_id = oa_file.file_id  WHERE ( id=181 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=181 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: file_id D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 147 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:13+08:00 ] 127.0.0.1 /index.php/Home/Mywork/waittingreply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 11 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:14+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T16:59:15+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T17:00:21+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0150s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:23+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-04T17:00:25+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=0&rank=2&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0120s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=2 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=2 and del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-04T17:00:30+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=1&rank=0&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( status=1 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( status=1 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:32+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork/status/1/rank/0/leibie/0/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( status=1 and del=1 ) ORDER BY id desc LIMIT 8,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( status=1 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:34+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork/status/1/rank/0/leibie/0/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( status=1 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( status=1 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T17:00:37+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=0&rank=1&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=1 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=1 and del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:39+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=0&rank=2&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0110s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=2 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=2 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:41+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=0&rank=3&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0110s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=3 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=3 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:43+08:00 ] 127.0.0.1 /index.php/Home?c=Workorder&a=allwork&status=0&rank=4&leibie=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=4 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=4 and del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:47+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0100s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T17:00:49+08:00 ] 127.0.0.1 /index.php/Home/Mywork/waittingreply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 11 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( user_id=8 and status=3 and del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:49+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:52+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 8,8   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:53+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0070s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:53+08:00 ] 127.0.0.1 /index.php/Home/Mywork/handleworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 74 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( rank=8 and leibie=1 and del=1 ) ORDER BY id desc LIMIT 70,10   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\WorkorderModel::getallCount(), called in D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php on line 89 and defined D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 94 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 103 行.
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( rank=8 and del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: leibie D:\phpStudy\WWW\foa\Application\Home\Model\WorkorderModel.class.php 第 125 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: rid D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 104 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\1432a9bbe00d3da3c243cbc018f9cc1a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-04T17:00:55+08:00 ] 127.0.0.1 /index.php/Home/Mywork/myworkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 40 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 42 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 51 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\MyworkController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 116 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 119 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 125 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\10914b7f410cea8c44f6b0e6fb03a668.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-04T17:00:59+08:00 ] 127.0.0.1 /index.php/Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0110s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,7,8,9,10,11,12,13,27,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 49 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
