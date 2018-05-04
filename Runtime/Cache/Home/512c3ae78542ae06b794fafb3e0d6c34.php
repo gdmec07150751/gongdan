@@ -101,16 +101,33 @@
                             <div class="box-body">                         
                                     <div class="form-group">
                                         <label class="control-label col-sm-2">用户名</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" style="width:200px" name="name" value="<?php echo ($info["name"]); ?>">
+
+
+                                    <?php if($info["name"] != null): ?><div class="col-sm-4">
+                                            <p style="margin-top: 6px;" name="name" value="<?php echo ($info["name"]); ?>"><?php echo ($info["name"]); ?></p>
                                         </div>
+
+                                        <?php else: ?>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" style="width:200px;" name="name" value="">
+                                        </div><?php endif; ?>
+
+
+
                                         <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2">登录名</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" style="width:200px" name="emp_no" value="<?php echo ($info["emp_no"]); ?>">
+
+
+                                      <?php if($info["emp_no"] != null): ?><div class="col-sm-4">
+                                            <p style="margin-top: 6px;"  name="emp_no" value="<?php echo ($info["emp_no"]); ?>"><?php echo ($info["emp_no"]); ?></p>
                                         </div>
+                                      <?php else: ?>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" style="width:200px;"  name="emp_no" value="">
+                                        </div><?php endif; ?>
+
                                         <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
                                     </div>
                                     <div class="form-group">
@@ -121,19 +138,19 @@
                                         <div class="col-sm-4"><span class="help-inline text-warning"></span></div>
                                     </div>
                                     <div class="form-group">
-                                        <!-- <label class="control-label col-sm-2">所属角色</label> -->
+                                        <label class="control-label col-sm-2" <?php if($sid == 6): ?>style="display: none;"<?php endif; ?>>所属角色</label>
 
-                                       <?php if($vo['role_id'] == 6): ?><input type='hidden' value="6" tyle="width:200px" name="role_id" id="role_id">
+                      <!--                  <?php if($vo['role_id'] == 6): ?><input type='hidden' value="6" tyle="width:200px" name="role_id" id="role_id">
                                        <?php else: ?>
-                                       <input type='hidden' value="2" tyle="width:200px" name="role_id" id="role_id"><?php endif; ?>
+                                       <input type='hidden' value="2" tyle="width:200px" name="role_id" id="role_id"><?php endif; ?> -->
 
 
-                       <!--                  <div class="col-sm-8">
+                                        <div class="col-sm-8" <?php if($sid == 6): ?>style="display: none;"<?php endif; ?>>
                                             <select class="small form-control"  style="width:200px" name="role_id" id="role_id">
                                                 <option value="">请选择</option>
                                                 <?php if(is_array($role)): foreach($role as $key=>$vo): ?><option value="<?php echo ($vo["role_id"]); ?>" <?php if($vo['role_id'] == $info['role_id']): ?>selected<?php endif; ?>><?php echo ($vo["role_name"]); ?></option><?php endforeach; endif; ?>        
     										</select>
-                                        </div> -->
+                                        </div>
                                     </div>                               
 
                             </div>

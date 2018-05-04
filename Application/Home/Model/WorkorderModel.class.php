@@ -29,33 +29,106 @@ public function selectall(){
 //分页查询所有工单
 //将数据分页
     public function getall($page,$pagesize=10){
-        //$menu_data = M('menu');
-        //$data['status'] = array('neq',-1);
          $offpage =  ($page-1) * $pagesize;
-         $list = $this->_db->order("id desc")->limit($offpage,$pagesize)->select();
+         $list = $this->_db->where('del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         //print_r($list);exit;
          return $list;
     }
 
 //分页根据查询工单
     //将数据分页
-    public function getalls($name,$value,$page,$pagesize=10){
+    public function getalls($status,$rank,$leibie,$page,$pagesize=10){
          $offpage =  ($page-1) * $pagesize;
           
 
-         $list = $this->_db->where($name.'='.$value)->order("id desc")->limit($offpage,$pagesize)->select();
+
+         if($status==0&&$rank!=0&&$leibie!=0){
+$list = $this->_db->where('rank='.$rank.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank==0&&$leibie!=0){
+$list = $this->_db->where('leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank!=0&&$leibie==0){
+$list = $this->_db->where('rank='.$rank.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+         if($status!=0&&$rank==0&&$leibie==0){
+$list = $this->_db->where('status='.$status.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+          if($rank==0&&$status!=0&&$leibie!=0){
+$list = $this->_db->where('status='.$status.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+
+          if($leibie==0&&$rank!=0&&$status!=0){
+$list = $this->_db->where('status='.$status.' and rank='.$rank.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+         if($status!=0&&$rank!=0&&$leibie!=0){
+           $list = $this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+         if($status==0&&$rank==0&&$leibie==0){
+            $list = $this->_db->where('del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
          return $list;
 
 
     }
 
 //计算总数据数量
-    public function getallCount($name,$value){
-      if($name == 0&&$value==0){
-        return $this->_db->count();
-      }else{
-        return $this->_db->where($name.'='.$value)->count();
+    public function getallCount($status,$rank,$leibie){
+      if($status==0&&$rank==0&&$leibie==0){
+        return $this->_db->where('del=1')->count();
       }
-      
+   if($status!=0&&$rank!=0&&$leibie!=0){
+        $count=$this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and del=1')->count();
+      }
+
+
+if($status==0&&$rank!=0&&$leibie!=0){
+    $count=$this->_db->where('rank='.$rank.' and leibie='.$leibie.' and del=1')->count();
+}
+
+
+if($status==0&&$rank==0&&$leibie!=0){
+    $count=$this->_db->where('leibie='.$leibie.' and del=1')->count();
+}
+
+if($status==0&&$rank!=0&&$leibie==0){
+    $count=$this->_db->where('rank='.$rank.' and del=1')->count();
+}
+if($status!=0&&$rank==0&&$leibie==0){
+    $count=$this->_db->where('status='.$status.' and del=1')->count();
+}
+
+if ($rank==0&&$status!=0&&$leibie!=0) {
+    $count=$this->_db->where('status='.$status.' and leibie='.$leibie.' and del=1')->count();
+}
+
+
+
+if($leibie==0&&$status!=0&&$rank!=0){
+    $count=$this->_db->where('status='.$status.' and rank='.$rank.' and del=1')->count();   
+}
+
+
+        
+      return $count;
     }
 
 
@@ -65,7 +138,7 @@ public function selectall(){
          $offpage =  ($page-1) * $pagesize;
           
 
-         $list = $this->_db->where($name.'='.$value.' and '.$name1.'='.$value1)->order("id desc")->limit($offpage,$pagesize)->select();
+         $list = $this->_db->where($name.'='.$value.' and '.$name1.'='.$value1.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
          return $list;
 
 
@@ -73,7 +146,7 @@ public function selectall(){
 
 //计算总数据数量
     public function getmyCount($name,$value,$name1,$value1){
-        return $this->_db->where($name.'='.$value.' and '.$name1.'='.$value1)->count();
+        return $this->_db->where($name.'='.$value.' and '.$name1.'='.$value1.' and del=1')->count();
  
     }
 
@@ -82,9 +155,11 @@ public function selectall(){
 
 
 //删除工单
-public function deleteById($v){
+public function deleteById($id,$data){
 
-return $this->_db->delete($v);
+//return $this->_db->delete($v);
+return $this->_db->where('id='.$id)->save($data);
+
 }
 //根据id查询工单
 public function selectOne($id){

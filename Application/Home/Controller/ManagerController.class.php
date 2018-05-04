@@ -8,14 +8,17 @@ class ManagerController extends BaseController {
         if($thisid == 6){
     	$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.role_id=6");
     }else{
-$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.role_id=2");
-
+$list = D('user')->query("SELECT * FROM __PREFIX__user AS a LEFT JOIN __PREFIX__admin_role AS b ON a.role_id=b.role_id WHERE a.id>1");
+//$uid neq $vo['id']
     }
+    $this->assign('sid',$thisid);
         $this->assign('uid',$thisuid);
     	$this->assign('list',$list);
     	$this->display();
     }
     public function userhandle(){
+        $thisid = session('role_id');
+        $this->assign('sid',$thisid);
     	$id = I('get.user_id');
     	$id ? $act='edit':$act="add";
     	if($id)

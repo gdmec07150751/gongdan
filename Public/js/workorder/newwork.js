@@ -9,6 +9,7 @@
   $('#new').click(function(){
       var title = document.getElementById('title').value;
       var rank = document.getElementById('level').value;
+      var leibie = document.getElementById('leibie').value;
       var content = um.getContent();
       if(!title||title.length>10){
         return dialog.error('标题不能为空,且长度少于10');
@@ -27,6 +28,7 @@
       data.append('content',content);
       data.append('imgid',imgid);
       data.append('fileid',fileid);
+      data.append('leibie',leibie);
       url = SCOPE.save_url
       jump_url = SCOPE.jump_url;
 

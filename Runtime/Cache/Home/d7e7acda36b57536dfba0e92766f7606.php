@@ -121,7 +121,15 @@
                 </select>
 
               </div>
+              <div class="form-group">
+                <select id='leibie' name="leibie" class="form-control" style="width:200px;">
+                  <option value="1">类别1</option>
+                  <option value="2">类别2</option>
+                  <option value="3">类别3</option>
+                  <option value="4">类别4</option>
+                </select>
 
+              </div>
 </div>
 
 

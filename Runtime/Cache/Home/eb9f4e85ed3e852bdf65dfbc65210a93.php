@@ -93,7 +93,7 @@
           <div class="col-xs-12">
             <div class="box">
               <div class="box-header">  
-              <div class="form-group pull-right">
+              <div class="form-group pull-right" <?php if($sid == 6): ?>style="display: none;"<?php endif; ?>>
                       <a href="<?php echo U('Manager/userhandle');?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>新增用户</a>
                     </div>            
                </div>     
@@ -113,15 +113,15 @@
                        </tr>
                      </thead>
             <tbody>
-              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row">
+              <?php if(is_array($list)): foreach($list as $k=>$vo): ?><tr role="row" <?php if($sid == 6 AND $vo['id'] != $uid): ?>style="display: none;"<?php endif; ?>>
                   
                          <td><?php echo ($vo["name"]); ?></td>
                          <td><?php echo ($vo["role_name"]); ?></td>
                        
                          <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
                          <td>
-                         <a  <?php if($uid != $vo['id']): ?>style='display: none;'<?php endif; ?> class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
-
+                         <a  <?php if($vo['role_id'] != 6 OR $sid == $vo['id']): ?>style='display: none;'<?php endif; ?> class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
+                        
 
                           <a style="display: none;" class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
                              

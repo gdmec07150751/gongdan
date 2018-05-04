@@ -48,9 +48,9 @@ if($_GET['status']){
 
 }else{
 
-        $menus = D('Workorder')->getalls('user_id',$user_id,$page,$pagesize,$status);
+        $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
 
-        $menucount = D('Workorder')->getallCount('user_id',$user_id);
+        $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
 }
 
        $res = new \Think\Page($menucount,$pagesize);

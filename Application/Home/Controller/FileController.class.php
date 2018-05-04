@@ -55,9 +55,7 @@ $pdf->run($input_url1,$output_url1);
                     'file_pdf' => $pdfarr1
                 );
               $is = D('File')->Insertall($filedata);
-               //var_dump($is);exit;
-             // $arr=array();
-              //$arr1=array();
+ 
               echo $is;exit;
         }
 

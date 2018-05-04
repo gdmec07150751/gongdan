@@ -97,11 +97,12 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12">
-<?php if(empty($list) == true): ?><div style="text-align: center;"><strong>暂时没有工单</strong></div>
-           <?php else: ?>
+
 
 
           <input id='mybtn' class="btn btn-primary" type='button' value="删除选中工单" <?php if($rid == 6): ?>style='display: none;'<?php endif; ?>>
+
+
           <select id='checkstatus'  class="form-control" style="width:200px;"> 
           <option value="0" >所有工单</option>
           <option <?php if($_GET[status]==1) echo("selected");?> value="1" >未处理</option>
@@ -109,9 +110,28 @@
             <option <?php if($_GET[status]==3) echo("selected");?> value="3" >待回复</option>
             <option <?php if($_GET[status]==4) echo("selected");?> value="4" >已完成</option>
           </select>
+
+
+                    <select id='checkrank'  class="form-control" style="width:200px;"> 
+          <option value="0" >所有优先级</option>
+          <option <?php if($_GET[rank]==1) echo("selected");?> value="1" >紧急</option>
+            <option <?php if($_GET[rank]==2) echo("selected");?> value="2" >高</option>
+            <option <?php if($_GET[rank]==3) echo("selected");?> value="3" >一般</option>
+            <option <?php if($_GET[rank]==4) echo("selected");?> value="4" >低</option>
+          </select>
+
+
+                    <select id='checkleibie'  class="form-control" style="width:200px;"> 
+          <option value="0" >所有类型</option>
+          <option <?php if($_GET[leibie]==1) echo("selected");?> value="1" >类别1</option>
+            <option <?php if($_GET[leibie]==2) echo("selected");?> value="2" >类别2</option>
+            <option <?php if($_GET[leibie]==3) echo("selected");?> value="3" >类别3</option>
+            <option <?php if($_GET[leibie]==4) echo("selected");?> value="4" >类别4</option>
+          </select>
           <input id='btn1' type='button' class="btn btn-primary" value="查询">
 
-
+<?php if(empty($list) == true): ?><div style="text-align: center;"><strong>暂时没有工单</strong></div>
+           <?php else: ?>
             <table id="list-table" class="table table-striped singcms-table" role="grid" aria-describedby="example1_info" style="text-align: center;">
              <thead>
                <tr role="row" align="center">
@@ -119,6 +139,7 @@
                  <td width="3%"><b>状态</b></td>
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
+                 <td width="8%"><b>类型</b></td>
                  <td width="15%"><b>操作</b></td>
 
                </tr>
@@ -144,7 +165,7 @@
                    <?php elseif($vo['rank'] == 3): ?><p class="label label-info">一般</p>
                    <?php else: ?><p class="label label-success">低</p><?php endif; ?>
                </td>
-               
+               <td><?php echo ($vo["leibie"]); ?></td>
                <td>
                <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
                <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">

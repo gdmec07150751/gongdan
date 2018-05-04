@@ -75,16 +75,15 @@ mybtn: ['确定','取消'] //按钮
       });
 
 $('#btn1').click(function(){
-  //alert('???');
   var statu = document.getElementById('checkstatus');
   var status = statu.value;
-  //alert(status);
-if(status==0){
+  var rank = document.getElementById('checkrank').value;
+  var leibie  = document.getElementById('checkleibie').value;
+if(status==0&&rank==0&&leibie==0){
   var url = SCOPE.save_url;
 }else{
-var url = SCOPE.edit2_url+"&status="+status;
+var url = SCOPE.edit2_url+"&status="+status+"&rank="+rank+"&leibie="+leibie;
 }
-//alert(url);
   window.location.href  = url;
   
         });

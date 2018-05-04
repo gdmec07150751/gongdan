@@ -39,7 +39,9 @@ class WorkorderController extends BaseController {
      if($_POST){
         $arr = explode(',', $_POST['idarr']);
         foreach($arr as $k => $v){
-           $is =D('Workorder')->deleteById($v);
+            //print_r($v);exit;
+            $data = array('del' => 2);
+           $is =D('Workorder')->deleteById($v,$data);
        }
    }
    //$is =D('Workorder')->selectall();
@@ -47,18 +49,17 @@ class WorkorderController extends BaseController {
    $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
    $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
-if($_GET['status']){
+if($_GET){
 
-    $menus = D('Workorder')->getalls('status',$_GET['status'],$page,$pagesize);
+    $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
 
-    $menucount = D('Workorder')->getallCount('status',$_GET['status']);
-
+    $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
 
 }else{
 
     $menus = D('Workorder')->getall($page,$pagesize);
 
-    $menucount = D('Workorder')->getallCount(0,0);
+    $menucount = D('Workorder')->getallCount(0,0,0);
 }
 
 
