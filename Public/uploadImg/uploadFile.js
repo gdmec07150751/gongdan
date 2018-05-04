@@ -2,10 +2,9 @@ var imgSrc1 = []; //图片路径
 var imgFile1 = []; //文件流
 var imgName1 = []; //图片名字
 var fileobj1 = [];
-var data1 = new FormData();
+
 //选择图片
-var pg=document.getElementById('pg');
-var count=0;
+
 function fileUpload(obj) {
 	var oInput1 = '#' + obj.inputId;
 	var imgfBox = '#' + obj.imgfBox;
@@ -13,7 +12,7 @@ function fileUpload(obj) {
 	//alert(imgBox);
 	
 	$(oInput1).on("change", function() {
-		count=0;
+
 		var fileImg1 = $(oInput1)[0];
 		var fileList1 = fileImg1.files;
 		var FORMAT = $(oInput1).val().substr($(this).val().length - 3, 3);
@@ -58,9 +57,10 @@ function fileUpload(obj) {
 
 		    var filesize = size.join('|');
 		    var filename = imgName1.join('|');
-
+var data1 = new FormData();
 data1.append('filesize',filesize);
 data1.append('filename',filename);
+
 		for (var i=0; i<fileobj1.length;i++) {
 			data1.append('filef[]',fileobj1[i]);
 		}
@@ -136,9 +136,11 @@ function submitPicture1(url,data) {
           	imgFile1 = []; 
           	imgName1 = []; 
           	fileobj1 = [];
+          	//document.getElementById("filef").value=null;
           	//data1.delete('file[]');
           	document.getElementById("btnf").style.display="none";
           return dialog.successf('上传成功');
+
       },
       error:function(dat){
    return dialog.error('上传失败，系统内部错误');

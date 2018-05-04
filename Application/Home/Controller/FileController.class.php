@@ -12,6 +12,7 @@ use Think\Controller;
 class FileController extends Controller
 {
     public function ajaxuploadfile(){
+        //print_r($_FILES);exit;
         if(!empty($_FILES)){
                 Vendor('pdfu.Pdfa');
                 $pdf =  new \pdf();
@@ -55,6 +56,8 @@ $pdf->run($input_url1,$output_url1);
                 );
               $is = D('File')->Insertall($filedata);
                //var_dump($is);exit;
+             // $arr=array();
+              //$arr1=array();
               echo $is;exit;
         }
 

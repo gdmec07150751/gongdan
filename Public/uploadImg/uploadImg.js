@@ -57,9 +57,10 @@ function imgUpload(obj) {
             }
 		    var imgsize = size.join('|');
 		    var imgname = imgName.join('|');
-
+var data = new FormData();
          data.append('imgsize',imgsize);
          data.append('imgname',imgname);
+        
 		for (var i=0; i<fileobj.length;i++) {
 			data.append('file[]',fileobj[i]);
 		}

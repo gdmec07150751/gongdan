@@ -120,7 +120,9 @@
                        
                          <td><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></td>
                          <td>
-                         <a class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
+                         <a  <?php if($uid != $vo['id']): ?>style='display: none;'<?php endif; ?> class="btn btn-primary" href="<?php echo U('Manager/userhandle',array('user_id'=>$vo['id']));?>"><i class="fa fa-pencil"></i></a>
+
+
                           <a style="display: none;" class="btn btn-danger" href="javascript:void(0)" data-url="<?php echo U('Manager/userhandle');?>" data-id="<?php echo ($vo["id"]); ?>" onclick="delfun(this)"><i class="fa fa-trash-o"></i></a>
                              
                 </td>
