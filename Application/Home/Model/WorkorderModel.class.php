@@ -37,10 +37,15 @@ public function selectall(){
 
 //分页根据查询工单
     //将数据分页
-    public function getalls($status,$rank,$leibie,$page,$pagesize=10){
+    public function getalls($status,$rank,$leibie,$page,$pagesize=10,$sid,$uid){
          $offpage =  ($page-1) * $pagesize;
-          
 
+
+
+
+if($sid==-1&&$uid==-1){
+
+//print_r('no ');exit;
 
          if($status==0&&$rank!=0&&$leibie!=0){
 $list = $this->_db->where('rank='.$rank.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
@@ -85,26 +90,173 @@ $list = $this->_db->where('status='.$status.' and rank='.$rank.' and del=1')->or
          }
 
 
+}
+
+if($sid==-1&&$uid!=-1){
+
+//print_r('yes ');exit;
+
+ if($status==0&&$rank!=0&&$leibie!=0){
+$list = $this->_db->where('rank='.$rank.' and user_id='.$uid.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank==0&&$leibie!=0){
+$list = $this->_db->where('leibie='.$leibie.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank!=0&&$leibie==0){
+$list = $this->_db->where('rank='.$rank.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+         if($status!=0&&$rank==0&&$leibie==0){
+$list = $this->_db->where('status='.$status.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+          if($rank==0&&$status!=0&&$leibie!=0){
+$list = $this->_db->where('status='.$status.' and leibie='.$leibie.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+
+          if($leibie==0&&$rank!=0&&$status!=0){
+$list = $this->_db->where('status='.$status.' and rank='.$rank.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+         if($status!=0&&$rank!=0&&$leibie!=0){
+           $list = $this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+         if($status==0&&$rank==0&&$leibie==0){
+            $list = $this->_db->where('user_id='.$uid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+if($sid!=-1&&$uid==-1){
+
+//print_r('yes ');exit;
+
+ if($status==0&&$rank!=0&&$leibie!=0){
+$list = $this->_db->where('rank='.$rank.' and solve_uid='.$sid.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank==0&&$leibie!=0){
+$list = $this->_db->where('leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+         if($status==0&&$rank!=0&&$leibie==0){
+$list = $this->_db->where('rank='.$rank.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+         if($status!=0&&$rank==0&&$leibie==0){
+$list = $this->_db->where('status='.$status.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+
+         }
+
+
+          if($rank==0&&$status!=0&&$leibie!=0){
+$list = $this->_db->where('status='.$status.' and leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+
+          if($leibie==0&&$rank!=0&&$status!=0){
+$list = $this->_db->where('status='.$status.' and rank='.$rank.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+         if($status!=0&&$rank!=0&&$leibie!=0){
+           $list = $this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+         if($status==0&&$rank==0&&$leibie==0){
+            $list = $this->_db->where('solve_uid='.$sid.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
+         }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          return $list;
-
-
     }
 
 //计算总数据数量
-    public function getallCount($status,$rank,$leibie){
+    public function getallCount($status,$rank,$leibie,$sid,$uid){
+
+
+if($sid==-1&&$uid==-1){
+
+
       if($status==0&&$rank==0&&$leibie==0){
         return $this->_db->where('del=1')->count();
       }
    if($status!=0&&$rank!=0&&$leibie!=0){
         $count=$this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and del=1')->count();
       }
-
-
 if($status==0&&$rank!=0&&$leibie!=0){
     $count=$this->_db->where('rank='.$rank.' and leibie='.$leibie.' and del=1')->count();
 }
-
-
 if($status==0&&$rank==0&&$leibie!=0){
     $count=$this->_db->where('leibie='.$leibie.' and del=1')->count();
 }
@@ -119,15 +271,94 @@ if($status!=0&&$rank==0&&$leibie==0){
 if ($rank==0&&$status!=0&&$leibie!=0) {
     $count=$this->_db->where('status='.$status.' and leibie='.$leibie.' and del=1')->count();
 }
-
-
-
 if($leibie==0&&$status!=0&&$rank!=0){
     $count=$this->_db->where('status='.$status.' and rank='.$rank.' and del=1')->count();   
 }
 
 
-        
+ }
+
+
+
+
+if($uid!=-1&&$sid==-1){
+
+
+
+
+          if($status==0&&$rank==0&&$leibie==0){
+        return $this->_db->where('user_id='.$uid.' and del=1')->count();
+      }
+   if($status!=0&&$rank!=0&&$leibie!=0){
+        $count=$this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and user_id='.$uid.' and del=1')->count();
+      }
+if($status==0&&$rank!=0&&$leibie!=0){
+    $count=$this->_db->where('rank='.$rank.' and leibie='.$leibie.' and user_id='.$uid.' and del=1')->count();
+}
+if($status==0&&$rank==0&&$leibie!=0){
+    $count=$this->_db->where('leibie='.$leibie.' and user_id='.$uid.' and del=1')->count();
+}
+
+if($status==0&&$rank!=0&&$leibie==0){
+    $count=$this->_db->where('rank='.$rank.' and user_id='.$uid.' and del=1')->count();
+}
+if($status!=0&&$rank==0&&$leibie==0){
+    $count=$this->_db->where('status='.$status.' and user_id='.$uid.' and del=1')->count();
+}
+
+if ($rank==0&&$status!=0&&$leibie!=0) {
+    $count=$this->_db->where('status='.$status.' and user_id='.$uid.' and leibie='.$leibie.' and del=1')->count();
+}
+if($leibie==0&&$status!=0&&$rank!=0){
+    $count=$this->_db->where('status='.$status.' and user_id='.$uid.' and rank='.$rank.' and del=1')->count();   
+}
+}
+
+
+
+
+
+if($uid==-1&&$sid!=-1){
+
+
+          if($status==0&&$rank==0&&$leibie==0){
+        return $this->_db->where('solve_uid='.$sid.' and del=1')->count();
+      }
+   if($status!=0&&$rank!=0&&$leibie!=0){
+        $count=$this->_db->where('status='.$status.' and rank='.$rank.' and leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->count();
+      }
+if($status==0&&$rank!=0&&$leibie!=0){
+    $count=$this->_db->where('rank='.$rank.' and leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->count();
+}
+if($status==0&&$rank==0&&$leibie!=0){
+    $count=$this->_db->where('leibie='.$leibie.' and solve_uid='.$sid.' and del=1')->count();
+}
+
+if($status==0&&$rank!=0&&$leibie==0){
+    $count=$this->_db->where('rank='.$rank.' and solve_uid='.$sid.' and del=1')->count();
+}
+if($status!=0&&$rank==0&&$leibie==0){
+    $count=$this->_db->where('status='.$status.' and solve_uid='.$sid.' and del=1')->count();
+}
+
+if ($rank==0&&$status!=0&&$leibie!=0) {
+    $count=$this->_db->where('status='.$status.' and solve_uid='.$sid.' and leibie='.$leibie.' and del=1')->count();
+}
+if($leibie==0&&$status!=0&&$rank!=0){
+    $count=$this->_db->where('status='.$status.' and solve_uid='.$sid.' and rank='.$rank.' and del=1')->count();   
+}
+}
+
+
+
+
+
+
+
+
+
+
+
       return $count;
     }
 

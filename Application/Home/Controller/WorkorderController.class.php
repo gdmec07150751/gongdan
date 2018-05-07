@@ -51,15 +51,15 @@ class WorkorderController extends BaseController {
    $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
 if($_GET){
 
-    $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
+    $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize,-1,-1);
 
-    $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
+    $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie'],-1,-1);
 
 }else{
 
     $menus = D('Workorder')->getall($page,$pagesize);
 
-    $menucount = D('Workorder')->getallCount(0,0,0);
+    $menucount = D('Workorder')->getallCount(0,0,0,-1,-1);
 }
 
 

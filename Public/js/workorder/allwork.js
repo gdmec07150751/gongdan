@@ -80,7 +80,7 @@ $('#btn1').click(function(){
   var rank = document.getElementById('checkrank').value;
   var leibie  = document.getElementById('checkleibie').value;
 if(status==0&&rank==0&&leibie==0){
-  var url = SCOPE.save_url;
+  var url = SCOPE.edit2_url;
 }else{
 var url = SCOPE.edit2_url+"&status="+status+"&rank="+rank+"&leibie="+leibie;
 }

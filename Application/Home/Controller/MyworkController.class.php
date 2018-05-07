@@ -40,17 +40,17 @@ $this->assign('rid',$roleid);
  $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
         $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
-if($_GET['status']){
+if($_GET){
  
-        $menus = D('Workorder')->getmys('user_id',$user_id,'status',$_GET['status'],$page,$pagesize);
+        $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize,-1,$user_id);
 
-        $menucount = D('Workorder')->getmyCount('user_id',$user_id,'status',$_GET['status']);
+        $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie'],-1,$user_id);
 
 }else{
 
-        $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
+        $menus = D('Workorder')->getalls(0,0,0,$page,$pagesize,-1,$user_id);
 
-        $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
+        $menucount = D('Workorder')->getallCount(0,0,0,-1,$user_id);
 }
 
        $res = new \Think\Page($menucount,$pagesize);
@@ -69,26 +69,21 @@ if($_GET['status']){
 
       $user_id = session(C('USER_AUTH_KEY'));
 
-        //$status = 3;
-
   $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
         $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
 
 if($_GET){
+ 
+        $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize,$user_id,-1);
 
-        $menus = D('Workorder')->getmys($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize);
-
-        $menucount = D('Workorder')->getmyCount($_GET['status'],$_GET['rank'],$_GET['leibie']);
-
-
+        $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie'],$user_id,-1);
 
 }else{
-        $menus = D('Workorder')->getalls('solve_uid',$user_id,$page,$pagesize);
 
-        $menucount = D('Workorder')->getallCount('solve_uid',$user_id);
+        $menus = D('Workorder')->getalls(0,0,0,$page,$pagesize,$user_id,-1);
 
-
+        $menucount = D('Workorder')->getallCount(0,0,0,$user_id,-1);
 }
        $res = new \Think\Page($menucount,$pagesize);
 

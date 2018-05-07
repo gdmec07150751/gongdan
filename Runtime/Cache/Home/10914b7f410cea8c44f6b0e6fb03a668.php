@@ -122,10 +122,10 @@
 
                     <select id='checkleibie'  class="form-control" style="width:200px;"> 
           <option value="0" >所有类型</option>
-          <option <?php if($_GET[leibie]==1) echo("selected");?> value="1" >类别1</option>
-            <option <?php if($_GET[leibie]==2) echo("selected");?> value="2" >类别2</option>
-            <option <?php if($_GET[leibie]==3) echo("selected");?> value="3" >类别3</option>
-            <option <?php if($_GET[leibie]==4) echo("selected");?> value="4" >类别4</option>
+          <option <?php if($_GET[leibie]==1) echo("selected");?> value="1" >查询</option>
+            <option <?php if($_GET[leibie]==2) echo("selected");?> value="2" >需求</option>
+            <option <?php if($_GET[leibie]==3) echo("selected");?> value="3" >管理</option>
+    
           </select>
           <input id='btn1' type='button' class="btn btn-primary" value="查询">
 
@@ -138,6 +138,7 @@
                  <td width="3%"><b>状态</b></td>
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
+                 <td width="8%"><b>类型</b></td>
                  <td width="15%"><b>操作</b></td>
 
                </tr>
@@ -163,7 +164,10 @@
                    <?php elseif($vo['rank'] == 3): ?><p class="label label-info">一般</p>
                    <?php else: ?><p class="label label-success">低</p><?php endif; ?>
                </td>
-               
+                              <td>
+               <?php if($vo["leibie"] == 1): ?>查询
+               <?php elseif($vo["leibie"] == 2): ?>需求
+               <?php elseif($vo["leibie"] == 3): ?>管理<?php endif; ?></td>
                <td>
                <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
                <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">
