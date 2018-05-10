@@ -7,6 +7,7 @@ if(file_exists("./Install/") && !file_exists("./Install/install.lock")){
 	header('Location:/Install/index.php');
 	exit(); 
 }
+define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);
 define('APP_PATH','./Application/');
 define ('RUNTIME_PATH', './Runtime/' );
 define('APP_STATUS', 'config');

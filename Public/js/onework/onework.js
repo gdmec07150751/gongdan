@@ -12,7 +12,7 @@ if(rid==6){
         inputId:'file', //input框id
         imgBox:'imgBox', //图片容器id
         buttonId:'btn', //提交按钮id
-        upUrl:'/index.php/home/img/ajaxuploadimg',  //提交地址
+        upUrl:'/home/img/ajaxuploadimg',  //提交地址
         data:'file1' //参数名
       });
 
@@ -20,7 +20,7 @@ if(rid==6){
         inputId:'filef', //input框id
         imgfBox:'imgfBox', //图片容器id
         buttonId:'btnf', //提交按钮id
-        upUrl:'/index.php/home/file/ajaxuploadfile',  //提交地址
+        upUrl:'/home/file/ajaxuploadfile',  //提交地址
         data:'file1f' //参数名
       });
 

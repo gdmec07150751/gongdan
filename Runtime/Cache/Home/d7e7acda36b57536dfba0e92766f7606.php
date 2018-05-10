@@ -192,16 +192,14 @@
 </div>
 <script>
   var SCOPE = {
-    'save_url' : '/index.php/Home/Workorder/newwork',
-    'jump_url' : '/index.php/Home/Workorder/allwork',
-    'ajax_upload_image_url' : '/index.php/Home/Workorder/uploadify',
-    //'ajax_upload_swf' : '/Public/js/party/uploadify.swf',*/
+    'save_url' : '/index.php?m=Home&c=Workorder&a=newwork',
+    'jump_url' : '/index.php?m=Home&c=Workorder&a=allwork',
   };
    imgUpload({
         inputId:'file', //input框id
         imgBox:'imgBox', //图片容器id
         buttonId:'btn', //提交按钮id
-        upUrl:'/index.php/home/img/ajaxuploadimg',  //提交地址
+        upUrl:'/index.php?m=Home&c=img&a=ajaxuploadimg',  //提交地址
         data:'file1' //参数名
       });
 
@@ -209,7 +207,7 @@
         inputId:'filef', //input框id
         imgfBox:'imgfBox', //图片容器id
         buttonId:'btnf', //提交按钮id
-        upUrl:'/index.php/home/file/ajaxuploadfile',  //提交地址
+        upUrl:'/index.php?m=Home&c=file&a=ajaxuploadfile',  //提交地址
         data:'file1f' //参数名
       });
 

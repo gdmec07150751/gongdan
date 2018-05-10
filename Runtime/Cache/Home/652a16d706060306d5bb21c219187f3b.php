@@ -188,10 +188,10 @@
      <script src='/Public/js/workorder/allwork.js' type="text/javascript"></script>
      <script type="text/javascript">
       var SCOPE = {
-        'save_url' : '/index.php/Home/Workorder/allwork',
-        'edit_url' : '/index.php/Home?c=OneWork&a=checkcontent',
-        'edit2_url' : '/index.php/Home?c=Workorder&a=allwork',
-        'jump_url' : '/index.php/Home/Workorder/allwork',
+        'save_url' : '/Home/Workorder/allwork',
+        'edit_url' : '/index.php?m=Home&c=OneWork&a=checkcontent',
+        'edit2_url' : '/index.php?m=Home&c=Workorder&a=allwork',
+        'jump_url' : '/Home/Workorder/allwork',
       };
     </script>
    

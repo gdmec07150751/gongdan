@@ -131,6 +131,8 @@
             dataType:'json',
             data:{username:username,password:password,vertify:vertify},
             success:function(res){
+                //alert(res.url);
+
                 if(res.status==1){
                     top.location.href = res.url;
                 }else{

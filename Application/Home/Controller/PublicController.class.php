@@ -36,7 +36,8 @@ class PublicController extends BaseController {
 					$data['login_count'] = array('exp', 'login_count+1');
 					$data['last_login_ip'] = get_client_ip();
 					$User -> save($data);
-                    $url = session('from_url') ? session('from_url') : U('Home/Index/index');
+                    $url = session('from_url') ? session('from_url') : '/Home/Index/index';
+                    //U('Home/Index/index')
                     exit(json_encode(array('status'=>1,'url'=>$url)));
                 }else{
                     exit(json_encode(array('status'=>0,'msg'=>'账号密码不正确！')));
@@ -62,7 +63,7 @@ class PublicController extends BaseController {
     public function logout(){
         session_unset();
         session_destroy();
-        $this->success("退出成功！",U('Public/login'));
+        $this->success("退出成功！",'/Home/Public/login');
     }
     public function ajaxupdatepwd(){
         $data = I('post.');

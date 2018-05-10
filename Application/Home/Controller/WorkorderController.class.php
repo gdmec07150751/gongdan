@@ -23,6 +23,7 @@ class WorkorderController extends BaseController {
                 'file_id' => $_POST['fileid'],
                 'img_id' => $_POST['imgid'],
                 'user_id' =>$uid,
+                'leibie' =>$_POST['leibie'],
                 );
             $is =D('Workorder')->Insert($data);
         }
