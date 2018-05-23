@@ -14,8 +14,8 @@ class FileController extends Controller
     public function ajaxuploadfile(){
         //print_r($_FILES);exit;
         if(!empty($_FILES)){
-                Vendor('pdfu.Pdfa');
-                $pdf =  new \pdf();
+                //Vendor('pdfu.Pdfa');
+                //$pdf =  new \pdf();
             import("@.Think.UploadFile");
             $upload = new \Think\Upload();
             $upload->rootPath  = 'upload/files/';//根路径
@@ -32,11 +32,39 @@ class FileController extends Controller
                 for($i=0;$i<count($info);$i++){
 
                     $arr[] = $info[$i]['savepath'].$info[$i]['savename'];
-
+//$pdf->run($input_url1,$output_url1);
+    //.$input_url1." ".$output_url1;
 $input_url1 = dirname(dirname(dirname(dirname(__FILE__)))).'/upload/files/'.$info[$i]['savepath'].$info[$i]['savename'];
+
+
 $output_url1 = dirname(dirname(dirname(dirname(__FILE__)))).'/upload/files/'.$info[$i]['savepath'].$info[$i]['savename'].'.pdf';
-$pdf->run($input_url1,$output_url1);
-    
+///home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx
+///home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx.pdf
+//java -jar /opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar /home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx /home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx.pdf
+//java -jar /opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx home/wwwroot/foa/upload/files/2018/05/10/5af407a603dd9.docx.pdf
+//java -jar /opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar home/wwwroot/foa/upload/files/2018/05/14/1.docx home/wwwroot/foa/upload/files/2018/05/14/1.docx.pdf
+//$pdf->run($input_url1,$output_url1);
+
+/*print_r($input_url1);
+print_r($output_url1);*/
+//try{
+// . $input_url1 . " " . $output_url1
+$command ="java -jar /opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar /home/wwwroot/foa/upload/files/2018/05/14/1.docx /home/wwwroot/foa/upload/files/2018/05/14/1.docx.pdf";
+//$command= "java -jar /opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar 1.docx 1.pdf";
+//print_r($command);
+//print_r($command);exit;
+$wordpath = "/home/wwwroot/foa/upload/files/2018/05/14/1.docx";
+$outPdfPath="/home/wwwroot/foa/upload/files/2018/05/14/1.docx.pdf";
+$jodconverterPath = "/opt/jodconverter-2.2.2/lib/jodconverter-cli-2.2.2.jar";
+
+//print_r("对一遍");
+$this->word2pdf($wordpath,$outPdfPath,$jodconverterPath);
+//print_r(echo exec($command,$out));
+//print_r("对了");
+//}catch(Exception $e){
+    //print_r($e);
+    //print_r("错了");
+//}
     $ourl = $info[$i]['savepath'].$info[$i]['savename'].'.pdf';
     
                     $pdfarr[] = $ourl;
@@ -63,4 +91,21 @@ $pdf->run($input_url1,$output_url1);
 
 
     }
+
+
+
+
+    function word2pdf ($wordpath, $outPdfPath, $jodconverterPath) {
+    if (empty($wordpath)) return false;    
+    try {
+        //这里是因为我吧Java（jdk/jre）加入了环境变量,故可直接写出下面这样， 
+        //相当于cmd窗口下直接写 java -jar jodconverter-cli-2.2.2.jar所在路径 word文件 PDF文件
+        $p = "java -jar ". $jodconverterPath . ' ' . $wordpath . ' ' . $outPdfPath;
+        // 否则该前面应该加入jre/jdk的路径
+        exec($p);
+        return true;
+    } catch (Exception $e) {
+        return false;
+    }
+}
 }

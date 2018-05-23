@@ -3,6 +3,11 @@ namespace Home\Controller;
 use Think\Controller;
 class WorkorderController extends BaseController {
     public function index(){
+        header("Content-type: text/html; charset=utf-8");
+        print_r($_POST);
+print_r($_GET);
+print_r($_REQUEST);
+        exit;
     }
 
     public function newwork(){

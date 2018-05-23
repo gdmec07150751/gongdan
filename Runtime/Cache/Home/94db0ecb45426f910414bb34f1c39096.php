@@ -156,9 +156,9 @@
           <script src='/Public/js/workorder/allwork.js' type="text/javascript"></script>
      <script type="text/javascript">
       var SCOPE = {
-        'save_url' : '/index.php/Home/Workorder/allwork',
-        'edit_url' : '/index.php/Home?c=OneWork&a=checkcontent',
-        'jump_url' : '/index.php/Home/Mywork/waittingreply',
+        'save_url' : '/Home/Workorder/allwork',
+        'edit_url' : '/index.php?m=Home&c=OneWork&a=checkcontent',
+        'jump_url' : '/Home/Mywork/waittingreply',
       };
     </script>
    
