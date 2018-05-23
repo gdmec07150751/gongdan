@@ -3,13 +3,9 @@ namespace Home\Controller;
 use Think\Controller;
 class WorkorderController extends BaseController {
     public function index(){
-        header("Content-type: text/html; charset=utf-8");
-        print_r($_POST);
-print_r($_GET);
-print_r($_REQUEST);
-        exit;
-    }
 
+    }
+//新建工单
     public function newwork(){
         if($_POST){
 
@@ -37,7 +33,7 @@ print_r($_REQUEST);
     }
 
 
-
+//查看所有工单
     public function allwork(){
         $roleid = session('role_id');
         $this->assign('rid',$roleid);

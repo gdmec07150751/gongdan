@@ -11,11 +11,17 @@ $this->assign('rid',$roleid);
   $page  = $_REQUEST['p']  ?   $_REQUEST['p'] : 1;
 
         $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
-
+if($roleid == 6){
         $menus = D('Workorder')->getmys('user_id',$user_id,'status',$status,$page,$pagesize);
 
         $menucount = D('Workorder')->getmyCount('user_id',$user_id,'status',$status);
+}elseif($roleid == 2){
 
+        $menus = D('Workorder')->getmys('solve_uid',$user_id,'status',$status,$page,$pagesize);
+
+        $menucount = D('Workorder')->getmyCount('solve_uid',$user_id,'status',$status);
+
+}
        $res = new \Think\Page($menucount,$pagesize);
 
        $pageRes = $res->show();
