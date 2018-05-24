@@ -6,6 +6,8 @@ class BaseController extends Controller {
 		parent::__construct();
 		// $navigate = navigateinfo();
 	}
+
+
     function _initialize(){
     	$authid = session(C('USER_AUTH_KEY'));
     	if(in_array(ACTION_NAME,array('login','logout','vertify')) || in_array(CONTROLLER_NAME,array('Ueditor','Uploadify'))){

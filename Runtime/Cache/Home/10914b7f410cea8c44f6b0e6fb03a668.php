@@ -139,6 +139,7 @@
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
                  <td width="8%"><b>类型</b></td>
+                 <td width="8%"><b>创建时间</b></td>
                  <td width="15%"><b>操作</b></td>
 
                </tr>
@@ -168,6 +169,7 @@
                <?php if($vo["leibie"] == 1): ?>查询
                <?php elseif($vo["leibie"] == 2): ?>需求
                <?php elseif($vo["leibie"] == 3): ?>管理<?php endif; ?></td>
+               <td><?php echo ($vo["create_time"]); ?></td>
                <td>
                <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
                <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">

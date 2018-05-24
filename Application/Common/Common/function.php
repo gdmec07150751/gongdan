@@ -25,7 +25,11 @@ function getAllMenu(){
 			array('name'=>'所有工单','act'=>'allwork','control'=>'Workorder'),
 			array('name'=>'等待回复的工单','act'=>'waittingreply','control'=>'Mywork'),
 			array('name'=>'我发布的工单','act'=>'myworkorder','control'=>'Mywork'),
-			array('name'=>'我处理的工单','act'=>'handleworkorder','control'=>'Mywork')
+			array('name'=>'我处理的工单','act'=>'handleworkorder','control'=>'Mywork'),
+			array('name'=>'查询工单','act'=>'checkcontent','control'=>'OneWork'),
+			)),
+		'onework'=>array('name'=>'工单管理','icon'=>'fa-clipboard','sub_menu'=>array(
+			array('name'=>'查询工单','act'=>'checkcontent','control'=>'OneWork'),
 			)),
 		'work' => array('name'=>'工作','icon'=>'fa-clipboard','sub_menu'=>array(
 			array('name'=>'工作日志','act'=>'worklog','control'=>'Work'),

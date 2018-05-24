@@ -1,0 +1,33 @@
+[ 2018-05-24T10:03:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-05-24T11:55:38+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2018-05-24T11:55:43+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2018-05-24T11:58:37+08:00 ] 127.0.0.1 /edee
+ERR: 无法加载模块:Edee
+
+[ 2018-05-24T11:58:49+08:00 ] 127.0.0.1 /sdsifjsd
+ERR: 无法加载模块:Sdsifjsd
+
+[ 2018-05-24T12:16:24+08:00 ] 127.0.0.1 /JSDHFDS
+ERR: 无法加载模块:JSDHFDS
+
+[ 2018-05-24T12:38:18+08:00 ] 127.0.0.1 /JSDHFDS
+ERR: 无法加载模块:JSDHFDS
+
+[ 2018-05-24T12:38:18+08:00 ] 127.0.0.1 /JSDHFDS
+ERR: 无法加载模块:JSDHFDS
+
+[ 2018-05-24T12:38:18+08:00 ] 127.0.0.1 /JSDHFDS
+ERR: 无法加载模块:JSDHFDS
+
+[ 2018-05-24T13:09:17+08:00 ] 127.0.0.1 /SDVDVDF
+ERR: 无法加载模块:SDVDVDF
+

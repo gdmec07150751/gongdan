@@ -16,6 +16,13 @@
                    'handleworkorder'=>'我处理的工单',
                     )
                 ),
+
+                'home/onework'=>array(
+                  'name'=>'处理工单',
+                  'action'=>array(
+                   'checkcontent'=>'处理工单',
+                    )
+                ),
            	'home/work'=>array(
                 'name' =>'工作',
                 'action'=>array(

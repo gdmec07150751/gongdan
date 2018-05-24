@@ -108,6 +108,7 @@
                  <td width="3%"><b>状态</b></td>
                  <td width="8%"><b>标题</b></td>
                  <td width="8%"><b>级别</b></td>
+                 <td width="8%"><b>创建时间</b></td>
                  <td width="15%"><b>操作</b></td>
 
                </tr>
@@ -136,7 +137,7 @@
                    <?php elseif($vo['rank'] == 3): ?><p class="label label-info">一般</p>
                    <?php else: ?><p class="label label-success">低</p><?php endif; ?>
                </td>
-               
+               <td><?php echo ($vo["create_time"]); ?></td>
                <td>
                <input type="hidden" name="wid"  value="<?php echo ($vo["id"]); ?>">
                <input type='button'  class="btn btn-primary"  attr-id='<?php echo ($vo["id"]); ?>' id='checkone' name='check'  value="查询">

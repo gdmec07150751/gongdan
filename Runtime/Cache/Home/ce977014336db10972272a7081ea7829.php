@@ -289,8 +289,8 @@
 <script src='/Public/js/onework/onework.js' type="text/javascript"></script>
   <script type="text/javascript">
       var SCOPE = {
-        'save_url' : '/Home/OneWork/checkcontent',
-        'edit_url' : '/Home/OneWork/checkcontent',
+        'save_url' : '/index.php?m=Home&c=OneWork&a=checkcontent',
+        'edit_url' : '/index.php?m=Home&c=OneWork&a=checkcontent',
       };
     </script>
 

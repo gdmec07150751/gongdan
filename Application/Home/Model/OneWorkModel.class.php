@@ -26,6 +26,7 @@ public function selectall($id){
     return $this->_db->where('workorder_id='.$id)
     ->join('LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id' )
     ->join('LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id')
+    ->order('time desc')
     ->select();
 }
 

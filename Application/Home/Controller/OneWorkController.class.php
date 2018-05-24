@@ -20,8 +20,24 @@ if($_POST['status']){
       'status' => $status,
       'rank' => $rank
 		);
+  //改变工单状态
 	 $is =D('Workorder')->updatelevel($id,$data);
+   //自动插入管理员回复
+   $authid = session('user_name');
+$odate=date("Y-m-d H:i:s"); 
+$a ='未处理';
+if($status==1){$a="未处理";}elseif($status==2){$a="处理中";}elseif($status==3){$a="等待回复";}elseif($status==4){$a="已完成";}
+
+
+        $data = array(
+                'user' => $authid,
+                'content' => '管理员'.$authid.'将该工单状态改为'.$a,
+                'time' => $odate,
+                'workorder_id' => $_POST['id'],
+          );
+        $managereturn =D('OneWork')->Insert($data);
 }else{
+  //接受或取消处理工单
   $sid = $_POST['sid'];
   //print_r($sid);exit;
 $status = $_POST['status'];
@@ -35,7 +51,18 @@ $status = $_POST['status'];
       'solve_uid' => 0,
     );
   if($sid ==0){
+    
     $is =D('Workorder')->updatelevel($id,$data);
+    //管理员自动回复
+$authid = session('user_name');
+$odate=date("Y-m-d H:i:s"); 
+        $data = array(
+                'user' => $authid,
+                'content' => '管理员'.$authid.'已经查看该工单，请等待处理…',
+                'time' => $odate,
+                'workorder_id' => $_POST['id'],
+          );
+        $managereturn =D('OneWork')->Insert($data);
   }else{
     $is =D('Workorder')->updatelevel($id,$data1);
   }
@@ -66,8 +93,7 @@ $odate=date("Y-m-d H:i:s");
 
 //显示工单内容
 if($_GET){
- $id = $_GET['id'];
-
+$id = $_GET['id'];
  $is =D('Workorder')->selectOne($id);
  $iswu =D('Workorder')->selectOnewu($id);
  $this->assign('iswu',$iswu);
@@ -99,8 +125,6 @@ if($is['file_id']&&$is['file_id']!=0){
   //$this->assign('sid',$solve_uid);
  $this->assign('onelist',$is);
 //print_r($is);exit;
-
-
 }
 
 

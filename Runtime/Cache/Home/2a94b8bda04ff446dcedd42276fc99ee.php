@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>FOA</title>
+    <title>工单系统</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,11 +35,11 @@
 <div class="wrapper">
   <header class="main-header">
       <!-- Logo -->
-      <a href="/index.php/Home/Index/index" class="logo">
+      <a href="/Home/Index/index" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b></b></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">&nbsp;&nbsp;<b>FOA</b></span>
+        <span class="logo-lg">&nbsp;&nbsp;<b>工单系统</b></span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top" role="navigation">
@@ -127,9 +127,9 @@ function updatepwd(id){
 
 	<footer class="main-footer">
 	   <div class="pull-right hidden-xs">
-	    	 感谢使用foa开源系统<b></b>
+	    	 感谢使用工单系统<b></b>
 	   </div>
-	   <strong>Copyright &copy; 2017-2018 <a href=""></a></strong>fzs保留所有权利。
+	   
 	</footer>
 
      <!-- Control Sidebar -->

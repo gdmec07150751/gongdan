@@ -17,7 +17,7 @@
       if(!content){
         return dialog.error('内容不能为空');
       }
-     //alert(leibie);
+
       var imgid = document.getElementById('imgid').value;
       var fileid = document.getElementById('fileid').value;  
       //console.log(imgid);

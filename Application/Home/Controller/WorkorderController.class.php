@@ -17,7 +17,9 @@ class WorkorderController extends BaseController {
             }
             //将新建工单数据保存数据库
             $uid = session(C('USER_AUTH_KEY'));
+            $odate=date("Y-m-d H:i:s");
             $data = array(
+                'create_time' => $odate,
                 'title' => $_POST['title'],
                 'rank' => $_POST['rank'],
                 'content' => $_POST['content'],
