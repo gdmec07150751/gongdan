@@ -3556,3 +3556,479 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
+[ 2018-05-24T15:19:30+08:00 ] 127.0.0.1 /Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0100s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 53 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: home/public D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 68 行.
+NOTIC: [8] Undefined index: home/public D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 69 行.
+SQL: SHOW COLUMNS FROM `oa_system_config` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_system_config` WHERE `code` = 'login_verify_code' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `val` FROM `oa_system_config` WHERE `code` = 'login_verify_code' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 68 行.
+NOTIC: [8] Undefined index: home/index D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 69 行.
+SQL: SHOW COLUMNS FROM `oa_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `oa_user` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Common\Common\function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: upgradeMsg D:\phpStudy\WWW\foa\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:26+08:00 ] 127.0.0.1 /Home/Workorder/newwork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0130s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:28+08:00 ] 127.0.0.1 /Home/Workorder/allwork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0110s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 53 行.
+NOTIC: [8] Undefined index: pagesize D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 58 行.
+SQL: SELECT * FROM `oa_workorder` WHERE ( del=1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Application\Home\Controller\WorkorderController.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `oa_workorder` WHERE ( del=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 108 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 109 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 110 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 111 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 117 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 118 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 119 行.
+NOTIC: [8] Use of undefined constant rank - assumed 'rank' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Undefined index: rank D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 120 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 126 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 127 行.
+NOTIC: [8] Use of undefined constant leibie - assumed 'leibie' D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+NOTIC: [8] Undefined index: leibie D:\phpStudy\WWW\foa\Runtime\Cache\Home\652a16d706060306d5bb21c219187f3b.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-24T15:37:29+08:00 ] 127.0.0.1 /index.php?m=Home&c=OneWork&a=checkcontent&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0140s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 20 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.solve_uid = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.user_id = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=200 ) ORDER BY time desc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: saa D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+NOTIC: [8] Undefined variable: saa D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+NOTIC: [8] Undefined variable: fl D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 168 行.
+NOTIC: [8] Undefined variable: filearr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:34+08:00 ] 127.0.0.1 /home/file/ajaxuploadfile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant UPLOAD_PATH - assumed 'UPLOAD_PATH' D:\phpStudy\WWW\foa\Application\Home\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpStudy\WWW\foa\Application\Home\Controller\FileController.class.php 第 25 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant UPLOAD_PATH - assumed 'UPLOAD_PATH' D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `oa_file` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `oa_file` [ RunTime:0.0150s ]
+SQL: INSERT INTO `oa_file` (`file_url`,`file_name`,`file_size`,`file_pdf`) VALUES ('2018/05/24/5b066bbea2b55.doc','201801031500241995.doc','44544','2018/05/24/5b066bbea2b55.doc.pdf') [ RunTime:0.0160s ]
+
+[ 2018-05-24T15:37:37+08:00 ] 127.0.0.1 /index.php?m=Home&c=OneWork&a=checkcontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0100s ]
+SQL: INSERT INTO `oa_onework` (`user`,`content`,`time`,`workorder_id`,`img_id`,`file_id`) VALUES ('admin1','<p>的</p>','2018-05-24 15:37:37','200','0','172') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=200 ) ORDER BY time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 101 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 102 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 104 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 105 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 107 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 108 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 109 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 110 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 114 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 115 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 116 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 117 行.
+NOTIC: [8] Undefined variable: gid D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 120 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 127 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 128 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 129 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 130 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 132 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 133 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 134 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 135 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 139 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 140 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 141 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 142 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 145 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 146 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 147 行.
+NOTIC: [8] Undefined variable: iswu D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 151 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 152 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 152 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 159 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 161 行.
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+NOTIC: [8] Undefined variable: fl D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 168 行.
+NOTIC: [8] Undefined variable: filearr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:38+08:00 ] 127.0.0.1 /index.php?m=Home&c=OneWork&a=checkcontent&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 20 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.solve_uid = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.user_id = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=200 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+NOTIC: [8] Undefined variable: fl D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 168 行.
+NOTIC: [8] Undefined variable: filearr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:47+08:00 ] 127.0.0.1 /home/file/ajaxuploadfile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant UPLOAD_PATH - assumed 'UPLOAD_PATH' D:\phpStudy\WWW\foa\Application\Home\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpStudy\WWW\foa\Application\Home\Controller\FileController.class.php 第 25 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant UPLOAD_PATH - assumed 'UPLOAD_PATH' D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 209 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant UPLOAD_PATH - assumed 'UPLOAD_PATH' D:\phpStudy\WWW\foa\ThinkPHP\Library\Think\Upload.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `oa_file` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `oa_file` [ RunTime:0.0160s ]
+SQL: INSERT INTO `oa_file` (`file_url`,`file_name`,`file_size`,`file_pdf`) VALUES ('2018/05/24/5b066bcb83e1d.docx|2018/05/24/5b066bcb849d5.xlsx','新建写作.docx|新建表格.xlsx','8549|7757','2018/05/24/5b066bcb83e1d.docx.pdf|2018/05/24/5b066bcb849d5.xlsx.pdf') [ RunTime:0.0010s ]
+
+[ 2018-05-24T15:37:49+08:00 ] 127.0.0.1 /index.php?m=Home&c=OneWork&a=checkcontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0090s ]
+SQL: INSERT INTO `oa_onework` (`user`,`content`,`time`,`workorder_id`,`img_id`,`file_id`) VALUES ('admin1','<p>查询形成形成&nbsp;</p>','2018-05-24 15:37:49','200','0','173') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=200 ) ORDER BY time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 101 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 102 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 104 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 105 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 107 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 108 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 109 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 110 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 114 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 115 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 116 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 117 行.
+NOTIC: [8] Undefined variable: gid D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 120 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 127 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 128 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 129 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 130 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 132 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 133 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 134 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 135 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 139 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 140 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 141 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 142 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 145 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 146 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 147 行.
+NOTIC: [8] Undefined variable: iswu D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 151 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 152 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 152 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 159 行.
+NOTIC: [8] Undefined variable: onelist D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 161 行.
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+NOTIC: [8] Undefined variable: fl D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 168 行.
+NOTIC: [8] Undefined variable: filearr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-24T15:37:50+08:00 ] 127.0.0.1 /index.php?m=Home&c=OneWork&a=checkcontent&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: act D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `oa_system_menu` [ RunTime:0.0090s ]
+SQL: SELECT `right` FROM `oa_system_menu` WHERE ( id in (3,4,5,6,39,62,63,64,65,66) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: role_right D:\phpStudy\WWW\foa\Application\Home\Controller\BaseController.class.php 第 41 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 20 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `oa_workorder` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.solve_uid = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `oa_workorder` LEFT JOIN oa_user ON oa_workorder.user_id = oa_user.id  WHERE ( oa_workorder.id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `oa_onework` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `oa_onework` LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id LEFT JOIN oa_file ON oa_onework.file_id = oa_file.file_id  WHERE ( workorder_id=200 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\foa\Application\Home\Controller\OneWorkController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: il D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 165 行.
+NOTIC: [8] Undefined variable: imgarr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 166 行.
+NOTIC: [8] Undefined variable: fl D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 168 行.
+NOTIC: [8] Undefined variable: filearr D:\phpStudy\WWW\foa\Runtime\Cache\Home\ce977014336db10972272a7081ea7829.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

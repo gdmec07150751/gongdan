@@ -10,101 +10,131 @@
        <div class="box-body">              
         <div class="row">
           <div class="col-sm-12"> 
-         
-<input type="hidden" id='sid' value="{$onelist['solve_uid']}">
-<input type="button" id='solvework' class='btn btn-info' value="我要处理此工单" <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq 0)"> style='display: none;'</if>>
 
-<input type="button" id='csw' class='btn btn-danger'  value="取消处理此工单" <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq $sid)"> style='display: none;'</if> >
-          <div id='dealwork'  <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq $sid)"> style='display: none;'</if> >
-     <select id='status' name="status" class="form-control" style="width:200px;">
-                  <option <if condition="$onelist['status'] eq 1" >selected="selected" </if> value="1">将工单转至未处理</option>
-                  <option <if condition="$onelist['status'] eq 2" >selected="selected" </if>   value="2">将工单转至正在处理</option>
-                  <option  <if condition="$onelist['status'] eq 3" >selected="selected" </if> value="3">将工单转至等待回复</option>
-                  <option  <if condition="$onelist['status'] eq 4" >selected="selected" </if>  value="4">将工单转至已处理</option>
-                </select>
-                
-     <select id='rank' name="rank" class="form-control" style="width:200px;">
-                  <option <if condition="$onelist['rank'] eq 1" >selected="selected" </if>   value="1">紧急</option>
-                  <option <if condition="$onelist['rank'] eq 2" >selected="selected" </if> value="2">高</option>
-                  <option  <if condition="$onelist['rank'] eq 3" >selected="selected" </if> value="3">一般</option>
-                  <option  <if condition="$onelist['rank'] eq 4" >selected="selected" </if> value="4">低</option>
-                </select>
-                <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
-<input type="hidden" id="getid" value="{$gid}">
-      </div>
+            <input type="hidden" id='sid' value="{$onelist['solve_uid']}">
 
-            
 
-<div>
+            <input type="button" id='solvework' class='btn btn-info' value="我要处理此工单" <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq 0)"> style='display: none;'</if>>
+
+
+            <input type="button" id='csw' class='btn btn-danger'  value="取消处理此工单" <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq $sid)"> style='display: none;'</if> >
+
+
+            <div id='dealwork'  <if condition="($rid eq 6) OR ($onelist['solve_uid'] neq $sid)"> style='display: none;'</if> >
+
+
+             <select id='status' name="status" class="form-control" style="width:200px;">
+              <option <if condition="$onelist['status'] eq 1" >selected="selected" </if> value="1">将工单转至未处理</option>
+              <option <if condition="$onelist['status'] eq 2" >selected="selected" </if>   value="2">将工单转至正在处理</option>
+              <option  <if condition="$onelist['status'] eq 3" >selected="selected" </if> value="3">将工单转至等待回复</option>
+              <option  <if condition="$onelist['status'] eq 4" >selected="selected" </if>  value="4">将工单转至已处理</option>
+            </select>
+
+
+
+
+            <select id='rank' name="rank" class="form-control" style="width:200px;">
+              <option <if condition="$onelist['rank'] eq 1" >selected="selected" </if>   value="1">紧急</option>
+              <option <if condition="$onelist['rank'] eq 2" >selected="selected" </if> value="2">高</option>
+              <option  <if condition="$onelist['rank'] eq 3" >selected="selected" </if> value="3">一般</option>
+              <option  <if condition="$onelist['rank'] eq 4" >selected="selected" </if> value="4">低</option>
+            </select>
+            <input type="button"  class="btn btn-primary" id='setsr' value='提交'>
+            <input type="hidden" id="getid" value="{$gid}">
+          </div>
+
+
+
+
+          <div>
+
+
             <strong>状态:</strong><p 
-             <if condition="$onelist['status'] eq 1" > class="label label-danger"
+            <if condition="$onelist['status'] eq 1" > class="label label-danger"
              <elseif condition="$onelist['status']  eq 2"/>class="label label-warning"
              <elseif condition="$onelist['status']  eq 3"/>class="label label-info"
              <elseif condition="$onelist['status']  eq 4"/>class="label label-success"
            </if>
-
-            ><if condition="$onelist['status'] eq 1" >未处理
-             <elseif condition="$onelist['status']  eq 2"/>处理中
-             <elseif condition="$onelist['status']  eq 3"/>待回复
-             <elseif condition="$onelist['status']  eq 4"/>已完成
-           </if>
-         </p>&nbsp&nbsp&nbsp&nbsp&nbsp
-
-        <strong>优先级:</strong><p 
-     <if condition="$onelist['rank'] eq 1" > class="label label-danger"
-             <elseif condition="$onelist['rank']  eq 2"/>class="label label-warning"
-             <elseif condition="$onelist['rank']  eq 3"/>class="label label-info"
-             <elseif condition="$onelist['rank']  eq 4"/>class="label label-success"
-           </if>
-
-
-         ><if condition="$onelist['rank'] eq 1" >紧急
-           <elseif condition="$onelist['rank']  eq 2"/>高
-           <elseif condition="$onelist['rank']  eq 3"/>一般
-           <else/>低
-         </if></p>
-</div>
-
-<div><strong>发布人:{$iswu['name']}</strong></div>
-<div><strong>处理人:<if condition="$onelist['solve_uid'] eq 0">暂无</if>{$onelist['name']}</strong></div>
+           ><if condition="$onelist['status'] eq 1" >未处理
+           <elseif condition="$onelist['status']  eq 2"/>处理中
+           <elseif condition="$onelist['status']  eq 3"/>待回复
+           <elseif condition="$onelist['status']  eq 4"/>已完成
+         </if>
+       </p>&nbsp&nbsp&nbsp&nbsp&nbsp
 
 
 
- 
+       <strong>优先级:</strong><p 
+       <if condition="$onelist['rank'] eq 1" > class="label label-danger"
+         <elseif condition="$onelist['rank']  eq 2"/>class="label label-warning"
+         <elseif condition="$onelist['rank']  eq 3"/>class="label label-info"
+         <elseif condition="$onelist['rank']  eq 4"/>class="label label-success"
+       </if>
+       ><if condition="$onelist['rank'] eq 1" >紧急
+       <elseif condition="$onelist['rank']  eq 2"/>高
+       <elseif condition="$onelist['rank']  eq 3"/>一般
+       <else/>低
+     </if></p>
 
-<div class = "panel panel-primary" style="margin-top: 50px">
-<div class="panel-heading"> <h3 class="panel-title">{$onelist['title']}</h3></div>
-<div class="panel-body">
-<p>{$onelist.content}
-</p>
-</div>
-<ul class="list-group">
-        <li class="list-group-item" <if condition="$il eq 0">style="display: none;"</if>> 
+
+   </div>
+
+
+
+   <div><strong>发布人:{$iswu['name']}</strong></div>
+
+
+   <div><strong>处理人:<if condition="$onelist['solve_uid'] eq 0">暂无</if>{$onelist['name']}</strong></div>
+
+
+   <div class = "panel panel-primary" style="margin-top: 50px">
+
+    <div class="panel-heading">
+
+    <h3 class="panel-title">{$onelist['title']}</h3>
+
+    </div>
+
+    <div class="panel-body">
+
+      <p>{$onelist.content}</p>
+
+    </div>
+
+
+    <ul class="list-group">
+
+
+      <li class="list-group-item" <if condition="$il eq 0">style="display: none;"</if>> 
         <volist name='imgarr' id='vo'>
           <img class="img-rounded" src='__ROOT__/upload/images/{$vo}' style="width: 100px;height: 100px;" onclick="imgDisplay(this)">
         </volist>
-        </li>
-        <li class="list-group-item" <if condition="$fl eq 0">style="display: none;"</if>>
-           <volist name='filearr' id='vo2'>
-           <div>
+      </li>
+
+
+      <li class="list-group-item" <if condition="$fl eq 0">style="display: none;"</if>>
+       <volist name='filearr' id='vo2'>
+         <div>
           <span>
-          {$vo2.file_name}
+            {$vo2.file_name}
           </span>
           &nbsp&nbsp&nbsp&nbsp
           <span> <a href='__ROOT__/upload/files/{$vo2.file_url}'  >
-          下载
+            下载
           </a></span>
-            
-        &nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp
           <span> <a class="pdf" href='__ROOT__/upload/files/{$vo2.file_pdf}'   target="_blank">
-          预览
+            预览
           </a></span>
           <div>
-   
-        </volist>
+          </volist>
         </li>
-    </ul>
-</div>
+
+
+      </ul>
+
+
+    </div>
 
 
 
@@ -112,93 +142,93 @@
 
 
 
-        <div class = "panel panel-primary">
-        <div class="panel-heading">
-         <h3 class="panel-title">
-            工单回复
-        </h3>
-        </div>
+    <div class = "panel panel-primary">
+      <div class="panel-heading">
+       <h3 class="panel-title">
+        工单回复
+      </h3>
+    </div>
 
-        <if condition='$le eq 0'><p style="text-align: center;"><strong>暂时没有回复内容</strong></p></if>
+    <if condition='$le eq 0'><p style="text-align: center;"><strong>暂时没有回复内容</strong></p></if>
 
-           <div class="panel-body">
+    <div class="panel-body">
 
-        <volist name='sa' id='vosa' >
+      <volist name='sa' id='vosa' >
         <div class = "panel panel-default">
 
 
           <div class="panel-heading">用户名:{$vosa.user}&nbsp&nbsp&nbsp 时间:{$vosa.time}</div>
           
           <div class="panel-body">
-         <p> {$vosa.content}
-          
-   </p>
-          </div>
-          <ul class="list-group">
+           <p> {$vosa.content}
+
+           </p>
+         </div>
+         <ul class="list-group">
 
           <li class="list-group-item" <if condition="$vosa['img_url'] eq false">style="display: none;"</if>>
-      <volist name="vosa['img_url']" id='lyvo'>
-          <img class="img-rounded"  src='__ROOT__/upload/images/{$lyvo}' style="width: 100px;height: 100px;" onclick="imgDisplay(this)" >
-</volist>
+            <volist name="vosa['img_url']" id='lyvo'>
+              <img class="img-rounded"  src='__ROOT__/upload/images/{$lyvo}' style="width: 100px;height: 100px;" onclick="imgDisplay(this)" >
+            </volist>
 
           </li> 
-           <li class="list-group-item" <if condition="$vosa['file_url'] eq false">style="display: none;"</if>>
-   <volist name="vosa['file_url']" id='lyvo2' key='k' >
-         <div> 
-         <span>{$lyvo2.name}</span>
-         <span  ><a href='__ROOT__/upload/files/{$lyvo2.url}'>下载</a></span>
-         <span  ><a href='__ROOT__/upload/files/{$lyvo2.pdf}' target="_blank">预览</a></span>
-         </div>
-</volist>
-           </li> 
-          </ul>
-
-
- 
-
-        </div>
-
-        </volist>
+          <li class="list-group-item" <if condition="$vosa['file_url'] eq false">style="display: none;"</if>>
+           <volist name="vosa['file_url']" id='lyvo2' key='k' >
+             <div> 
+               <span>{$lyvo2.name}</span>
+               <span  ><a href='__ROOT__/upload/files/{$lyvo2.url}'>下载</a></span>
+               <span  ><a href='__ROOT__/upload/files/{$lyvo2.pdf}' target="_blank">预览</a></span>
+             </div>
+           </volist>
+         </li> 
+       </ul>
 
 
 
 
-<ul class="pagination">
-                           {$page}
-                        </ul>
+     </div>
+
+   </volist>
+
+
+
+
+   <ul class="pagination">
+     {$page}
+   </ul>
+ </div>
 </div>
-        </div>
 
 
 
-        <form> 
-          <script type="text/plain" name='content' id="myEditor" style="width:100%;height:200px;"></script>
+<form> 
+  <script type="text/plain" name='content' id="myEditor" style="width:100%;height:200px;"></script>
 
-   <div id='quanshangchuan'>      
+  <div id='quanshangchuan'>      
     <div id="upBox">
-       <div id="inputBox" class="btn btn-primary"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
-       <input type='hidden' class="imgid" id='imgid'  name="imgid" value=''>
-         <div id="imgBox">
-         </div>
-         <input  type="button" id="btn" value="上传图片" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
-         </div>
-    <div id="upfBox">
-       <div id="inputfBox" class="btn btn-primary"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
-       <input type='hidden' class="fileid" id='fileid'  name="fileid" value=''>
-      
-         <div id="imgfBox">
-         </div>
-           <input type="button" id="btnf" value="上传文件" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
-         </div>
+     <div id="inputBox" class="btn btn-primary"><input type="file" title="请选择图片" id="file" multiple />点击选择图片</div>
+     <input type='hidden' class="imgid" id='imgid'  name="imgid" value=''>
+     <div id="imgBox">
+     </div>
+     <input  type="button" id="btn" value="上传图片" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
+   </div>
+   <div id="upfBox">
+     <div id="inputfBox" class="btn btn-primary"><input type="file" title="请选择文件" id="filef" multiple />点击选择文件</div>
+     <input type='hidden' class="fileid" id='fileid'  name="fileid" value=''>
+
+     <div id="imgfBox">
+     </div>
+     <input type="button" id="btnf" value="上传文件" class="btn btn-primary" style="display: none;margin-top: 10px;width: 20%;"></br>
+   </div>
+ </div>
+
+</form>
+
+</div>
+</div>
+<input type="button" id='btnl' class="btn btn-primary"  value="发送">
 </div>
 
-        </form>
-
-      </div>
-    </div>
-    <input type="button" id='btnl' class="btn btn-primary"  value="发送">
-  </div>
-  
 </div>
 
 </div>
@@ -216,11 +246,11 @@
 <script src='__PUBLIC__/uploadImg/uploadImg.js' type="text/javascript"></script>
 <script src='__PUBLIC__/uploadImg/uploadFile.js' type="text/javascript"></script>
 <script src='__PUBLIC__/js/onework/onework.js' type="text/javascript"></script>
-  <script type="text/javascript">
-      var SCOPE = {
-        'save_url' : '__ROOT__/index.php?m=Home&c=OneWork&a=checkcontent',
-        'edit_url' : '__ROOT__/index.php?m=Home&c=OneWork&a=checkcontent',
-      };
-    </script>
+<script type="text/javascript">
+  var SCOPE = {
+    'save_url' : '__ROOT__/index.php?m=Home&c=OneWork&a=checkcontent',
+    'edit_url' : '__ROOT__/index.php?m=Home&c=OneWork&a=checkcontent',
+  };
+</script>
 
 </html>

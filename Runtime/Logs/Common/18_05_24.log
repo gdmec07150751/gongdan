@@ -31,3 +31,15 @@ ERR: 无法加载模块:JSDHFDS
 [ 2018-05-24T13:09:17+08:00 ] 127.0.0.1 /SDVDVDF
 ERR: 无法加载模块:SDVDVDF
 
+[ 2018-05-24T15:37:52+08:00 ] 127.0.0.1 /upload/files/2018/05/24/5b066bcb849d5.xlsx.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Upload
+
+[ 2018-05-24T15:38:04+08:00 ] 127.0.0.1 /upload/files/2018/05/24/5b066bcb83e1d.docx.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Upload
+

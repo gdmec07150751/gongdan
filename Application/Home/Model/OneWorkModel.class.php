@@ -14,7 +14,7 @@ private $_db = '';
 	}
 
 
-
+//添加留言
 public function Insert($data = array()){
       if(!$data || !is_array($data)) {
             return 0;
@@ -22,6 +22,7 @@ public function Insert($data = array()){
         return $this->_db->add($data);
 }
 
+//查询留言
 public function selectall($id){
     return $this->_db->where('workorder_id='.$id)
     ->join('LEFT JOIN oa_img ON oa_onework.img_id = oa_img.img_id' )

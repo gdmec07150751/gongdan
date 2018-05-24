@@ -54,7 +54,7 @@ class WorkorderController extends BaseController {
 
    $pagesize =  $_REQUEST['pagesize'] ? $_REQUEST['pagesize'] : 8;
 if($_GET){
-
+//分类查询
     $menus = D('Workorder')->getalls($_GET['status'],$_GET['rank'],$_GET['leibie'],$page,$pagesize,-1,-1);
 
     $menucount = D('Workorder')->getallCount($_GET['status'],$_GET['rank'],$_GET['leibie'],-1,-1);

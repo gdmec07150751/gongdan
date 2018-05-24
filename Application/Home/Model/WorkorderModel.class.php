@@ -37,15 +37,20 @@ public function selectall(){
 
 //分页根据查询工单
     //将数据分页
+
+   /* 
+    @status 工单状态
+    @rank 工单级别
+    @leibie 工单类别
+    @page 分页数据
+    @pagesize 分页数据
+    @sid 处理人ID
+    @uid 用户ID
+   */
     public function getalls($status,$rank,$leibie,$page,$pagesize=10,$sid,$uid){
          $offpage =  ($page-1) * $pagesize;
 
-
-
-
 if($sid==-1&&$uid==-1){
-
-//print_r('no ');exit;
 
          if($status==0&&$rank!=0&&$leibie!=0){
 $list = $this->_db->where('rank='.$rank.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
@@ -94,7 +99,6 @@ $list = $this->_db->where('status='.$status.' and rank='.$rank.' and del=1')->or
 
 if($sid==-1&&$uid!=-1){
 
-//print_r('yes ');exit;
 
  if($status==0&&$rank!=0&&$leibie!=0){
 $list = $this->_db->where('rank='.$rank.' and user_id='.$uid.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
@@ -141,25 +145,13 @@ $list = $this->_db->where('status='.$status.' and rank='.$rank.' and user_id='.$
 
 
 
-
-
-
-
-
-
-
 }
-
-
-
-
 
 
 
 
 if($sid!=-1&&$uid==-1){
 
-//print_r('yes ');exit;
 
  if($status==0&&$rank!=0&&$leibie!=0){
 $list = $this->_db->where('rank='.$rank.' and solve_uid='.$sid.' and leibie='.$leibie.' and del=1')->order("id desc")->limit($offpage,$pagesize)->select();
@@ -205,42 +197,22 @@ $list = $this->_db->where('status='.$status.' and rank='.$rank.' and solve_uid='
 
 
 
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
          return $list;
     }
 
+
+
+
+   /* 
+    @status 工单状态
+    @rank 工单级别
+    @leibie 工单类别
+    @sid 处理人ID
+    @uid 用户ID
+   */
 //计算总数据数量
     public function getallCount($status,$rank,$leibie,$sid,$uid){
 
@@ -363,6 +335,12 @@ if($leibie==0&&$status!=0&&$rank!=0){
     }
 
 
+
+
+   /* 
+    @name 字段名
+    @value 字段内容
+   */
 //分页查询我的工单
 
   public function getmys($name,$value,$name1,$value1,$page,$pagesize=10){

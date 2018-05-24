@@ -1,10 +1,9 @@
  function checkAll() {  
 
-
         var all=document.getElementById('allselect');
 
         var one=document.getElementsByName('dcheckbox');
-
+//全选
         if(all.checked==true){ 
 
           for(var i=0;i<one.length;i++){  
@@ -21,7 +20,7 @@
 
 
       } 
-
+//查看
 $('.singcms-table #checkone').click(function(){
   var id = $(this).attr('attr-id');
     var url = SCOPE.edit_url+"&id="+id;
@@ -74,6 +73,7 @@ mybtn: ['确定','取消'] //按钮
       );
       });
 
+//分类查询
 $('#btn1').click(function(){
   var statu = document.getElementById('checkstatus');
   var status = statu.value;

@@ -3,11 +3,12 @@ if(rid==6){
   var dealwork =document.getElementById('dealwork');
   dealwork.style.display='none';
 }*/
+//实例化百度编辑器
   var um = UM.getEditor('myEditor',{initialFrameWidth: null});
 
   //var um = UM.getEditor('myEditor');
 
-
+//图片处理
      imgUpload({
         inputId:'file', //input框id
         imgBox:'imgBox', //图片容器id
@@ -15,7 +16,7 @@ if(rid==6){
         upUrl:'/home/img/ajaxuploadimg',  //提交地址
         data:'file1' //参数名
       });
-
+//文件处理
    fileUpload({
         inputId:'filef', //input框id
         imgfBox:'imgfBox', //图片容器id
@@ -24,6 +25,8 @@ if(rid==6){
         data:'file1f' //参数名
       });
 
+
+
 //取消处理按钮
 $('#csw').click(function(){
 layer.confirm('您确定要取消处理这个工单？', {
@@ -31,7 +34,9 @@ mybtn: ['确定','取消'] //按钮
 },function(){
   var url =SCOPE.save_url;
 var status = document.getElementById('status').value;
+//工单ID
 var gid = document.getElementById('getid').value;
+//处理人的ID
 var sid = document.getElementById('sid').value;
 status = 1;
 var data = new FormData();
@@ -49,17 +54,13 @@ data.append('status',status);
       url:url,
       data: data,
           success: function(dat) {
-
  return dialog.success('取消成功',jumpurl);
       },
       error:function(dat){
    return dialog.error('系统内部错误');
       }
   });
-  
-
        });
-
 });
 
 
@@ -71,9 +72,10 @@ layer.confirm('您确定要接受处理这个工单？', {
 mybtn: ['确定','取消'] //按钮
 },function(){
   var url =SCOPE.save_url;
-
 var status = document.getElementById('status').value;
+//工单ID
 var gid = document.getElementById('getid').value;
+//处理人ID
 var sid = document.getElementById('sid').value;
 status = 1;
 var data = new FormData();
@@ -106,6 +108,7 @@ data.append('status',status);
 
 //发送留言
 $('#btnl').click(function(){
+  //工单ID
   var gid = document.getElementById('getid').value;
   var imgid = document.getElementById('imgid').value;
   var fileid = document.getElementById('fileid').value;
